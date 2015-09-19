@@ -10,9 +10,9 @@ main(){
     do{         //laco enquanto nao for positivo nao continua
         printf("\nDigite um numero inteiro positivo:");
         scanf("%d", &num);
-    }while(num<=0);
-    for (i=1;i<=num;i++){   //modtra TODOS os fatoriais de 1 ate num
-        printf("\nFatorial de %d eh: %.0f", i, fat(i));
+    }while(num<0);
+    for (i=0;i<=num;i++){   //modtra TODOS os fatoriais de 1 ate num
+        printf("\nFatorial de %d eh: %g", i, fat(i));
     }
     getch();
 }
