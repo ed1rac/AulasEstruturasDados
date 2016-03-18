@@ -10,7 +10,7 @@ main(){
     int cont;
     cont = 2;
     while(cont<=50){
-        printf("%d\n", cont);
+        printf("%d\t", cont);
         cont+=2;
     }
     getch();
