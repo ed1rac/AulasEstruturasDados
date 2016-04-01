@@ -12,7 +12,8 @@ int main()
   system("pause");
   return 0;
 }
-/*  O comentário pode conter mais de uma linha
+/*  
+    O comentário pode conter mais de uma linha
     como neste exemplo. Comentários não tem ação
     ou não geram nenhuma ação por parte do compu-
     tador. Eles são ignorados pelo compilador.
