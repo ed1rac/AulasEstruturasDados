@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <math.h>    // necessário para sin()
+//#include <math.h>    // necessÃ¡rio para sin()
 
 int main()
 {
-  float y;  /*Declarando a variável y   */
+  float y;  /*Declarando a variÃ¡vel y   */
   y = sin(1.5);
   printf("Programa Besta do SENO\n");
   printf("y = %f\n\n",y);
-  printf("");   //comentários de uma linha sao permitidos
+  printf("");   //comentÃ¡rios de uma linha sao permitidos
   system("pause");
   return 0;
 }
-/*  O comentário pode conter mais de uma linha
-    como neste exemplo. Comentários não tem ação
-    ou não geram nenhuma ação por parte do compu-
-    tador. Eles são ignorados pelo compilador.
+/*  O comentÃ¡rio pode conter mais de uma linha
+    como neste exemplo. ComentÃ¡rios nÃ£o tem aÃ§Ã£o
+    ou nÃ£o geram nenhuma aÃ§Ã£o por parte do compu-
+    tador. Eles sÃ£o ignorados pelo compilador.
     Servem para melhorar a legibilidade de programas
 */
