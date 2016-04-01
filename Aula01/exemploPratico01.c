@@ -16,5 +16,5 @@ int main()
     como neste exemplo. Comentários não tem ação
     ou não geram nenhuma ação por parte do compu-
     tador. Eles são ignorados pelo compilador.
-    Servem para melhorar a legibilidade de programas
+    Servem para melhorar a legibilidade de programas.
 */
