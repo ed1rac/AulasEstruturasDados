@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Função : Inverte um número de até 10 números
+/*  FunÃ§Ã£o : Inverte um nÃºmero de atÃ© 10 nÃºmeros
     Autor : Edkallenn  -  Data : 06/04/2012
-    Observações:
+    ObservaÃ§Ãµes:
 */
 
 main(){

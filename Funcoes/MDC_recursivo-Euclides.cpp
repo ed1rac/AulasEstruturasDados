@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Função : MDC entre dois números recursivo (Euclides)
+/*  FunÃ§Ã£o : MDC entre dois nÃºmeros recursivo (Euclides)
     Autor : Edkallenn  -  Data : 06/04/2012
-    Observações:
+    ObservaÃ§Ãµes:
 */
 int mdc(int, int);
 
@@ -18,10 +18,10 @@ main(){
 }
 
 int mdc(int x, int y){
-    if(y==0)                    /caso básico
+    if(y==0)                    /caso bï¿½sico
         return x;
     else if (x<y)
-            return mdc(y,x);    //passo de recursão
+            return mdc(y,x);    //passo de recursï¿½o
          else
             return mdc(y, x % y);
 }

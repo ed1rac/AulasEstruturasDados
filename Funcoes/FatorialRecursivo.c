@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Fun��o : Funcao fatorial recursiva
+/*  Função : Funcao fatorial recursiva
     Autor : Edkallenn
     Data : 06/04/2012
-    Observa��es:
+    Observações:
 */
 
 float fat(int n);
