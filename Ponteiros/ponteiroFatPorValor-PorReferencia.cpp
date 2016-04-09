@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Função : Funcao fatorial recursiva por valor e por referencia
+/*  FunÃ§Ã£oo : Funcao fatorial recursiva por valor e por referencia
     Autor : Edkallenn
     Data : 07/05/2013
-    Observações:
+    ObservaÃ§Ãµes:
 */
 #define QL printf("\n")
 

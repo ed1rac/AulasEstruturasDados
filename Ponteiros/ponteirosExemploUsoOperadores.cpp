@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Função : Usando os operadores & e *
+/*  FunÃ§Ã£o: Usando os operadores & e *
     Autor : Edkallenn  -  Data : 06/04/2012
-    Observações: Exemplos de utilização dos operadores de ponteiro
+    ObservaÃ§Ãµs: Exemplos de utilizaÃ§Ã£o dos operadores de ponteiro
 */
 main(){
     int a,b,c,*p;

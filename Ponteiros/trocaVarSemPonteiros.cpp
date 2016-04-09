@@ -1,10 +1,10 @@
-#include "stdio.h"
+#include <stdio.h>
 #include <stdlib.h>
 
-// Função : Troca Valor de duas variaveis - sem usar ponteiros
+// FunÃ§Ã£o : Troca Valor de duas variaveis - sem usar ponteiros
 // Autor : Edkallenn
 // Data : 06/04/2012
-// Observações: O endereco h mostrado apenas  como prova de que realmente as variaveis foram trocadas e nao somente exibidas em ordem contraria.
+// ObservaÃ§Ãµes: O endereco h mostrado apenas  como prova de que realmente as variaveis foram trocadas e nao somente exibidas em ordem contraria.
 
 main()
 {

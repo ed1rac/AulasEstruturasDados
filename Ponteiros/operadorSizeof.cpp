@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
-    FunÁ„o : Mais exemplos do operador sizeof
+    Fun√ß√£o : Mais exemplos do operador sizeof
     Autor : Edkallenn
     Data : 06/04/2012
-    ObservaÁıes: sizeof È um operador em tempo de compilaÁ„o un·rio que retorna
- 				o tamanho, em bytes, da vari·vel ou especificador de tipo,
+    Observa√ß√µes: sizeof √© um operador em tempo de compila√ß√£o un√°rio que retorna
+ 				o tamanho, em bytes, da vari√°vel ou especificador de tipo,
 				em parenteses que ele precede.
 */
 main()
