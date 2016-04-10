@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Funçãoo : Funcao cubo e quadrado por valor e por referencia
+/*  Funçãoo : Função cubo e quadrado por valor e por referencia
     Autor : Edkallenn
     Data : 07/05/2013
     Observações: Exercício em sala.
