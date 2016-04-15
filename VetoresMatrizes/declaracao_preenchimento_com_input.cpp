@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Função : Inicializacao com inputs (vetores)
+/*  FunÃ§Ã£o : Inicializacao com inputs (vetores)
     Autor : Edkallenn
     Data : 06/04/2012
-    Observações: arquivo-> declaracao_preenchimento_com_input.cpp
+    ObservaÃ§Ãµes: arquivo-> declaracao_preenchimento_com_input.cpp
 */
 #define MAX 10  //tamanho maximo do vetor
 main(){
