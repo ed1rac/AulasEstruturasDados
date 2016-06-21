@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//protótipos
+//protÃ³tipos
 double fat(int);
 double combinacao(int n, int r);
 double arranjo(int n, int p);
@@ -15,6 +15,7 @@ main(){
     printf("A comb(%d,%d)\t=%g\n", num1,num2,combinacao(num1,num2));
     printf("O arranjo(%d,%d)\t=%g\n", num1,num2,arranjo(num1,num2));
     getch();
+    
 }
 
 double fat(int num){
