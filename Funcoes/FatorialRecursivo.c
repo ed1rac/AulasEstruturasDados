@@ -17,15 +17,11 @@ main(){
 
     for (i=1;i<=num;i++){
         printf("\nFatorial de %d eh: %.0f", i, fat(i));
-
     }
     getch();
-
-
 }
 
 float fat(int n){
-
     if (n==0)
         return 1;
     else

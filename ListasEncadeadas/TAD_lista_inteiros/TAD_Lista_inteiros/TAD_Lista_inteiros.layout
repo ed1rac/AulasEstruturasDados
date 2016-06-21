@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="lista.c" open="0" top="0" tabpos="3">
+		<Cursor position="55" topLine="0" />
+	</File>
+	<File name="lista.h" open="0" top="0" tabpos="2">
+		<Cursor position="183" topLine="0" />
+	</File>
+	<File name="teste_TAD_lista.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="123" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

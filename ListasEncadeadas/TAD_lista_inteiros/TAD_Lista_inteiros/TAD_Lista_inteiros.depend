@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1340319894 source:c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\listas encadeadas\tad_lista_inteiros\tad_lista_inteiros\teste_tad_lista.cpp
+	<stdio.h>
+	"lista.h"
+
+1340319825 c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\listas encadeadas\tad_lista_inteiros\tad_lista_inteiros\lista.h
+
+1340320153 source:c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\listas encadeadas\tad_lista_inteiros\lista.c
+	<stdio.h>
+	"lista.h"
+
+1340319825 c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\listas encadeadas\tad_lista_inteiros\lista.h
+
+1340320153 source:c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\listas encadeadas\tad_lista_inteiros\tad_lista_inteiros\lista.c
+	<stdio.h>
+	"lista.h"
+
