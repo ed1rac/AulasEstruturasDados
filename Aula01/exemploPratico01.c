@@ -10,6 +10,9 @@ int main()
   printf("y = %f\n\n",y);
   printf("");   //comentários de uma linha sao permitidos
   system("pause");
+  printf("%d
+  ", &var);
+  
   return 0;
 }
 /*  

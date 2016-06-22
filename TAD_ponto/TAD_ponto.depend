@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1340080387 source:c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\estruturas\testa_ponto.c
+	<stdio.h>
+	<math.h>
+	"ponto.h"
+
+1340077159 c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\estruturas\ponto.h
+
+1340080274 source:c:\users\ed\dropbox\001 - estrutura de dados - ed\programas-c\estruturas\ponto.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	"ponto.h"
+
+1340076788 source:h:\001 - estrutura de dados - ed\programas-c\estruturas\testa_ponto.c
+	<stdio.h>
+	<math.h>
+	"ponto.h"
+
+1340077094 h:\001 - estrutura de dados - ed\programas-c\estruturas\ponto.h
+
+1340080274 source:h:\001 - estrutura de dados - ed\programas-c\estruturas\ponto.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	"ponto.h"
+

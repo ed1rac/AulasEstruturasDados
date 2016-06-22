@@ -1,10 +1,12 @@
-/* Função : Exemplo do uso de Listas Encadeadas
+/* Funï¿½ï¿½o : Exemplo do uso de Listas Encadeadas
 / Autor : Edkallenn
 / Data : 06/04/2012
-/ Observações:
+/ Observaï¿½ï¿½es:
 */
 #include <stdio.h>
 #include <stdlib.h>
+
+
 
 //definicao
 struct lista{
@@ -13,6 +15,8 @@ struct lista{
 };
 //sinonimo
 typedef struct lista Lista;
+
+
 
 Lista* lst_cria(void);
 Lista* lst_insere(Lista* l, int i);
@@ -85,7 +89,7 @@ int lst_conta_elemento(Lista* l, int v){
     }
 }
 
-//função para retornar a quantidade de elementos de uma lista encadeada
+//funï¿½ï¿½o para retornar a quantidade de elementos de uma lista encadeada
 int lst_contaElementos(Lista* l){
     Lista* p;
     if(lst_vazia(l))
@@ -248,12 +252,12 @@ void lst_imprime_rec2 (Lista* l){
         lst_imprime_rec2(l->prox);
     }
 }
-/* Função retira recursiva */
+/* Funï¿½ï¿½o retira recursiva */
 Lista* lst_retira_rec (Lista* l, int v){
     if (!lst_vazia(l)) {
-    /* verifica se elemento a ser retirado é o primeiro */
+    /* verifica se elemento a ser retirado ï¿½ o primeiro */
         if (l->info == v) {
-            Lista* t = l; /* temporário para poder liberar */
+            Lista* t = l; /* temporï¿½rio para poder liberar */
             l = l->prox;
             free(t);
         }
@@ -293,12 +297,12 @@ int lst_igual_rec (Lista* l1, Lista* l2){
             return l1->info == l2->info && lst_igual(l1->prox, l2->prox);
 }
 
-/* função imprime: imprime valores dos elementos */
+/* funï¿½ï¿½o imprime: imprime valores dos elementos */
 void lcirc_imprime (Lista* l){
-    Lista* p = l; /* faz p apontar para o nó inicial */
-    /* testa se lista não é vazia e então percorre com do-while */
+    Lista* p = l; /* faz p apontar para o nï¿½ inicial */
+    /* testa se lista nï¿½o ï¿½ vazia e entï¿½o percorre com do-while */
     if (p) do {
-        printf("%d\n", p->info); /* imprime informação do nó */
-        p = p->prox; /* avança para o próximo nó */
+        printf("%d\n", p->info); /* imprime informaï¿½ï¿½o do nï¿½ */
+        p = p->prox; /* avanï¿½a para o prï¿½ximo nï¿½ */
     } while (p != l);
 }

@@ -4,6 +4,7 @@
 * Data : 22/06/2015
 * Obs: Usa a função putchar --> exibe um único caractere
 */
+
 main(){
     char frase[80];
     int i;

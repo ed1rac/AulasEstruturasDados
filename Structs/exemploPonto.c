@@ -1,18 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
 struct ponto{
     float x;    //POderia ser float x,y;
     float y;
 };
 
 main(){
-    struct ponto p; //declaração da variável p do tipo strucut ponto
+    struct ponto p; //declaraï¿½ï¿½o da variï¿½vel p do tipo strucut ponto
 
     p.x = 10.0;
     p.y = 5.0;
 
     printf("O ponto = P(%f,%f)\n", p.x,p.y);
+    
 
     getchar();
 }
