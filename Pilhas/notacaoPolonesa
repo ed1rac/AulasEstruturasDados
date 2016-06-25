@@ -1,0 +1,15 @@
+#Notacao Polonesa inversa
+1   2   +   4   3  *     +
+
+Usando uma pilha, ficaria:
+- empilhar quando encontrarmos um operando
+- tirar dois operandos e achar o valor quando encontrar um operdor
+- empilhar o re sultado
+==================================================
+push 1      => 1
+push 2      => 1,2
++           => 3
+push 4      => 3, 4
+push 3      =>3, 4, 3
+*           => 3, 12
++           => 15  

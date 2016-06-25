@@ -1,17 +1,17 @@
-/* Função : Exemplo do uso de pilhas
+/* Funï¿½ï¿½o : Exemplo do uso de pilhas
 / Autor : Edkallenn
 / Data : 12/06/2012
-/ Observações:
+/ Observaï¿½ï¿½es:
 */
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 50      // número máximo de elementos
+#define TAM 50      // nï¿½mero mï¿½ximo de elementos
 
 struct pilha {
-    int n;        // vet[n]: primeira posição livre do vetor
-    float vet[N]; // vet[n-1]: topo da pilha
-                  // vet[0] a vet[N-1]: posições ocupáveis
+    int n;        // vet[n]: primeira posiï¿½ï¿½o livre do vetor
+    float vet[TAM]; // vet[n-1]: topo da pilha
+                  // vet[0] a vet[N-1]: posiï¿½ï¿½es ocupï¿½veis
 };
 typedef struct pilha Pilha;
 
@@ -31,11 +31,11 @@ Pilha* pilha_cria (void)
 
 void pilha_push (Pilha* p, float v)
 {
-    if (p->n == N) {    /* capacidade esgotada */
+    if (p->n == TAM) {    /* capacidade esgotada */
         printf("Capacidade da pilha estourou.\n");
         exit(1);    /* aborta programa */
     }
-        /* insere elemento na próxima posição livre */
+        /* insere elemento na prï¿½xima posiï¿½ï¿½o livre */
         p->vet[p->n] = v;
         p->n++;     /* equivalente a: p->n = p->n + 1 */
 }
@@ -48,7 +48,7 @@ float pilha_pop (Pilha* p)
         exit(1);
     }   /* aborta programa */
     /* retira elemento do topo */
-    v = p->vet[p->n-1];
+    v = p->vet[p->n-1]; //acessa o topo da pilha
     p->n--;
     return v;
 }
