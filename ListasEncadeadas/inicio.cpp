@@ -6,8 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 //definicao
 struct lista{
     int info;

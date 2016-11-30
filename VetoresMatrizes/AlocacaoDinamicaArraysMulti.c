@@ -8,7 +8,7 @@ main(){
     int **p;
     int i, j;
     //cria e lê o array
-p = (int**) malloc(N*sizeof(int));  //cria as linhas
+    p = (int**) malloc(N*sizeof(int*));  //cria as linhas
     for (i=0;i<N;i++){
         p[i]=(int *) malloc(N*sizeof(int)); //cria as colunas
         for (j=0;j<N;j++){

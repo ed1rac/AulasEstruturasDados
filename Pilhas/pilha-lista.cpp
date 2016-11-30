@@ -1,13 +1,13 @@
-/* Função : Exemplo do uso de pilhas
+/* FunÃ§Ã£o : Exemplo do uso de pilhas
 / Autor : Edkallenn
 / Data : 12/06/2012
-/ Observações:
+/ ObservaÃ§Ãµes:
 */
 #include <stdio.h>
 #include <stdlib.h>
 
 
-/* nó da lista para armazenar valores reais */
+/* nÃ³ da lista para armazenar valores reais */
 struct lista {
     float info;
     struct lista* prox;
