@@ -10,7 +10,12 @@
         },
         {
             "name": "Win32",
-            "includePath": ["C:/Program Files (x86)/CodeBlocks/MinGW/include"]
+            "includePath": ["D:/Program Files (x86)/CodeBlocks/MinGW/include/"]
         }
-    ]
+        
+    ],
+     "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+     }
 }
