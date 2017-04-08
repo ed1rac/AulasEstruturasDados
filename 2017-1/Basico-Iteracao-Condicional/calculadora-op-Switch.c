@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define QL printf("\n")
 main(){
 	float num1, num2;
@@ -18,9 +19,11 @@ main(){
                 case'/':    printf("=%g\n", num1/num2); break;
                 case'^':    printf("=%g\n", pow(num1,num2)); break;
                 default:    printf("Operador Invalido\n"); break;
-            } QL;
-	  printf("Continua(S/N)?");
-      c = getch(); QL;
-    }while((c == 'S')||(c == 's')); QL;
+            } 
+            QL;
+	      printf("Continua(S/N)?");
+        scanf(" %c", &c);
+    }while((c == 'S')||(c == 's')); 
+    QL;
     system("pause");
 }
