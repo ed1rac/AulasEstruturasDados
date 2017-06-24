@@ -20,7 +20,7 @@ int main (void)
 
     pto_libera(q);
     pto_libera(p);
-
+    getchar();
     return 0;
 }
 
