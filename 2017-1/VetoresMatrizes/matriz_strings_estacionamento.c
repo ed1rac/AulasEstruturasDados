@@ -19,7 +19,7 @@ int main(){
           printf("\nO Estacionamento so possui 30 vagas\n");
         
     }while(qtdCarro>30);
-   
+
     for (i=0;i<qtdCarro; i++){
         printf("Placa do veiculo %d: ", i+1);
         scanf(" %s", placa + i);

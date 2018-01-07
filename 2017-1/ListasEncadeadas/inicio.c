@@ -163,7 +163,7 @@ int main(void){
         int posicao;
         posicao = lst_conta_elemento(l, num);
         printf("\nO numero %d esta na Posicao %d!\n", num, posicao);
-        lst_retira(l, num);
+        lst_remove(l, num);
     }else
         printf("\nO numero %d nao esta na lista!\n", num);
 
