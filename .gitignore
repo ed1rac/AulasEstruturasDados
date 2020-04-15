@@ -1,0 +1,5 @@
+#ignorar todos os logs, arquivos .o, .exe e .out
+*.log
+*.exe
+*.o
+*.out
