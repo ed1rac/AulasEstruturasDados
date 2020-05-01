@@ -35,7 +35,7 @@ void SelectionSort(int x[], int n){
 int main(){
   int i,n,a[TAM_MAX];
 
-  // Inicializar gerador de números aleatórios
+  // Inicializar gerador de nÃºmeros aleatÃ³rios
   srand((unsigned)time(NULL));
 
   // Vetor gerado aleatoriamente
