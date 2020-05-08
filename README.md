@@ -4,7 +4,7 @@ Aulas de Estruturas de Dados do Professor Ed é um projeto do professor Edkallen
 
 Os Commits são todos efetuados dentro de sala enquanto os programas vão sendo codificados junto com os alunos.
 
-A ementa da disciplina contempla uma parte introdutória que cobre a Linguagem C (Entrada/Saída, Controle de Fluxo, ponteiros e funções) e, em seguida, usa a Linguagem C para apresentar as estruturas de dados básicas: vetores, matrizes, strings, estruturas heterogêneas(structs), busca linear e binária, ordenação (Insertion Sort, Bubble Sort, Selection Sort, Merge Sort e Quick Sort), e estruturas dinâmicas: listas, filas e pilhas. A partir de 2017/2018 a disciplina vem usando Python para exemplificar os algoritmos e a codificação tem sido uma mescla das duas liguagens com resultados excelentes (a aprovação aumentou muito assim como as desistências!).
+A ementa da disciplina contempla uma parte introdutória que cobre a Linguagem C (Entrada/Saída, Controle de Fluxo, ponteiros e funções) e, em seguida, usa a Linguagem C para apresentar as estruturas de dados básicas: vetores, matrizes, strings, estruturas heterogêneas(structs), busca linear e binária, ordenação (Insertion Sort, Bubble Sort, Selection Sort, Merge Sort e Quick Sort), e estruturas dinâmicas: listas, filas e pilhas. A partir de 2017/2018 a disciplina vem usando Python para exemplificar os algoritmos e a codificação tem sido uma mescla das duas liguagens com resultados excelentes (a aprovação aumentou muito assim como as desistências diminuíram!).
 
 Adições serão sempre efetuadas além de Commits relacionados às maratonas de programação que, porventura, surgirem.
 
