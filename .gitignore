@@ -3,3 +3,5 @@
 *.exe
 *.o
 *.out
+.gitignore
+.vscode
