@@ -36,7 +36,7 @@ void copia(char* dest, char* orig)
     dest[i] = '\0';
 }
 
-main(){
+int main(){
 
     char texto[81], texto2[81];
     printf ("Digite um texto: ");

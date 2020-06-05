@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Função :Primeiro exemplo de estrutura
+/*  Funï¿½ï¿½o :Primeiro exemplo de estrutura
     Autor : Edkallenn  - Data : 06/04/2012
 */
 main(){
@@ -31,9 +31,6 @@ main(){
     printf("Preco: %g\n", A.preco);
     printf("Data: %d de %s de %d\n", A.diavenda.dia,
             A.diavenda.mes, A.diavenda.ano);
-
-
-
 
     Manoel.nmat=456;
     Manoel.nota[0]=7.5;
