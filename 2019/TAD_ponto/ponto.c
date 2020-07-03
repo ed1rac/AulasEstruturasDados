@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+
 #include "ponto.h"
 
 struct ponto {
     float x;
     float y;
 };
+
 
 Ponto *pto_cria (float x, float y){
     Ponto *p = (Ponto*) malloc(sizeof(Ponto));
@@ -18,7 +20,6 @@ Ponto *pto_cria (float x, float y){
     p->y = y;
     return p;
 }
-
 void pto_libera (Ponto *p){
     free(p);
 }

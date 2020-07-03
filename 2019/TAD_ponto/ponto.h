@@ -1,19 +1,22 @@
 /* TAD: Ponto (x,y) */
 /* Tipo exportado */
-typedef struct ponto Ponto;
 
-/* FunÁıes exportadas */
-/* FunÁ„o cria - Aloca e retorna um ponto com coordenadas (x,y) */
+/* Salve este arquivo como ponto.h */
+
+typedef struct ponto Ponto;     //Sin√¥nimo do tipo
+
+/* Fun√ß√µes exportadas */
+/* Fun√ß√£o cria - Aloca e retorna um ponto com coordenadas (x,y) */
 Ponto *pto_cria (float x, float y);
 
-/* FunÁ„o libera - Libera a memÛria de um ponto previamente criado */
+/* Fun√ß√£o libera - Libera a mem√≥ria de um ponto previamente criado */
 void pto_libera (Ponto * p);
 
-/* FunÁ„o acessa - Retorna os valores das coordenadas de um ponto */
+/* Fun√ß√£o acessa - Retorna os valores das coordenadas de um ponto */
 void pto_acessa (Ponto *p, float *x, float *y);
 
-/* FunÁ„o atribui - Atribui novos valores ‡s coordenadas de um ponto */
+/* Fun√ß√£o atribui - Atribui novos valores √†s coordenadas de um ponto */
 void pto_atribui (Ponto *p, float x, float y);
 
-/* FunÁ„o distancia - Retorna a dist‚ncia entre dois pontos */
+/* Fun√ß√£o distancia - Retorna a dist√¢ncia entre dois pontos */
 float pto_distancia (Ponto *p1, Ponto *p2);

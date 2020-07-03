@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 typedef struct frac{
     int num;
     int den;
@@ -19,6 +20,7 @@ void multiplicar_fracoes(frac, frac);
 void dividir_fracoes(frac, frac);
 void simplificar_fracao(frac);
 int mdc(int x, int y);
+
 
 int main(){
     char resposta;
@@ -44,21 +46,24 @@ int main(){
     }
     getchar(); return(0);
 }
+
 void obter_fracoes(frac *a, frac *b){
     printf("\nDigite o Numerador da 1a. Fracao: ");
-    scanf("%d", &((*a).num)); //&a->num
+    scanf("%d", &a->num); //&a->num
     printf("\nDigite o Denominador da 1a. Fracao: ");
-    scanf("%d", &((*a).den));
+    scanf("%d", &a->den);
     printf("\nDigite o Numerador da 2a. Fracao: ");
-    scanf("%d", &((*b).num));
+    scanf("%d", &b->num);
     printf("\nDigite o Denominador da 2a. Fracao: ");
-    scanf("%d", &((*b).den));
-    printf("\nA fracao 1 e: %d / %d\n", (*a).num, (*a).den);
-    printf("A fracao 2 e: %d / %d\n", (*b).num, (*b).den);
+    scanf("%d", &b->den);
+    printf("\nA fracao 1 e: %d / %d\n", a->num, a->den);
+    printf("A fracao 2 e: %d / %d\n", b->num, b->den);
     //system("pause ");
     getchar();
     return;
 }
+
+
 void somar_fracoes(frac x, frac y){
     frac f;
     f.num = x.num*y.den + y.num*x.den;
@@ -77,6 +82,7 @@ void multiplicar_fracoes(frac x, frac y){
     f.den = x.den*y.den;
     simplificar_fracao(f);
 }
+
 void dividir_fracoes(frac x, frac y){
     frac f;
     f.num = x.num*y.den;
@@ -91,6 +97,8 @@ void simplificar_fracao(frac f){
     printf("Resultado: %d / %d\n", f.num, f.den);
     system("pause");
 }
+
+
 int mdc(int x, int y){
     int r;
     while(r!=0){
