@@ -1,12 +1,13 @@
 # Aulas de Estruturas Dados
-
 ## Prof. Edkallenn Lima
-
 ### Mestre em Ciência da Computação
 
 [Descrição do projeto](#Descricao-do-projeto)
+
 [Ementa da Disciplina](#Ementa-da-Disciplina)
+
 [Python?](#Python)
+
 [Contatos do professor:](#Contatos-do-professor)
 
 
