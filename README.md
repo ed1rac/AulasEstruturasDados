@@ -1,4 +1,4 @@
-### Prof. Edkallenn Lima - Mestre em Ciência da Computação
+### Aulas Estruturas de Dados do Prof. Edkallenn Lima 
 ---
 
 [Descrição do projeto](#Descricao-do-projeto)
