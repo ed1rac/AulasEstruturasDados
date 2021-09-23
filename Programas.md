@@ -12,11 +12,13 @@
 ---
 
 ## Contatos do professor:
-Página pessoal: https://edkallenn.github.io/
-e-mail: edkallenn@yahoo.com.br
-Twitter: @edkallenn
-Facebook: https://www.facebook.com/edkallenn
-Instagram: @edkallenn
-Blog: https://professored.wordpress.com/
-Linkedin: https://www.linkedin.com/in/edkallenn/
+
+- Página pessoal: https://edkallenn.github.io/
+- e-mail: edkallenn@yahoo.com.br
+- Twitter: @edkallenn
+- Facebook: https://www.facebook.com/edkallenn
+- Instagram: @edkallenn
+- Blog: https://professored.wordpress.com/
+- Linkedin: https://www.linkedin.com/in/edkallenn/
+
 Até mais e bons programas!
