@@ -1,5 +1,7 @@
 # Lista de Programas
 
+- [HOME](http://ed1rac.github.io/AulasEstruturasDados/)
+
 - [Programas feitos na disciplina em 2016](https://github.com/ed1rac/AulasEstruturasDados/tree/master/2016)
 
 - [Programas feitos na disciplina em 2017](https://github.com/ed1rac/AulasEstruturasDados/tree/master/2017-1)
