@@ -7,6 +7,8 @@
 
 [Slides usados em sala](https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides)
 
+[Página com os programas](/Programas.md)
+
 [Python?](#Python)
 
 [Contatos do professor:](#Contatos-do-professor)
