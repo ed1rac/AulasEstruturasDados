@@ -5,6 +5,8 @@
 
 [Ementa da Disciplina](#Ementa-da-Disciplina)
 
+[Slides usados em sala](https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides)
+
 [Python?](#Python)
 
 [Contatos do professor:](#Contatos-do-professor)
