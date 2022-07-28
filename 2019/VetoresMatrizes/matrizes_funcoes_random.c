@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*  Função : Exemplos de matrizes - random
+/*  Funï¿½ï¿½o : Exemplos de matrizes - random
     Autor : Edkallenn  - Data : 10/04/2012
     Obs:                                    */
 #define LINHA 10
@@ -10,19 +10,20 @@
 
 void lematriz_random(int b[][COLUNA], int, int, int);
 void exibematriz(int b[][COLUNA], int, int);
-void ordena_bolha_int(int a[][COLUNA], int linha, int coluna);
 int random(int n);
-main(){
+
+int main(){
     int b[LINHA][COLUNA];           //declara
     srand((unsigned)time(NULL));    //inicializa nos. aleatorios
     puts("Gera matriz randomica");
     PULA;
-    lematriz_random(b, LINHA, COLUNA, 100);     //lê
+    lematriz_random(b, LINHA, COLUNA, 100);     //lï¿½
     exibematriz(b, LINHA, COLUNA);  //exibe
   //  ordena_bolha_int(b, LINHA, COLUNA);
     PULA;
     exibematriz(b, LINHA, COLUNA);  //exibe
     getchar();
+    return 0;
 }
 void lematriz_random(int mat[][COLUNA], int lin, int col, int n){
 int i, j, valor;
@@ -44,17 +45,4 @@ void exibematriz(int mat[][COLUNA], int lin, int col){
 }
 int random(int n){      //funcao para gerar aleatorios
     return rand() % n;
-}
-void ordena_bolha_int(int a[][COLUNA], int linha, int coluna){
-    int pass, i, j, aux;
-    for (pass=1;pass<(linha*coluna);pass++)  //passadas
-        for(i=0;i<=linha-2;i++){    //uma passada
-            for(j=0;j<coluna;j++){
-            if(a[i*coluna+j]>a[(i*coluna+j)+1]){    //uma comparacao
-                aux=a[(i*coluna+j)];       //uma permuta
-                a[i*coluna+j]=a[(i*coluna+j)+1];
-                a[(i*coluna+j)+1]=aux;
-            }
-        }
-        }
 }

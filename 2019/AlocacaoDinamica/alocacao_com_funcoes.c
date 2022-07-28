@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Funcao: Cálculo da média e da variância de n reais
+/*  Funcao: Cï¿½lculo da mï¿½dia e da variï¿½ncia de n reais
     Autor: Edkallenn - Data: 20/05/2012
     Obs: Usando funcoes para TUDO                   */
 int le_quant_int();
@@ -13,7 +13,7 @@ float variancia(int n, float *v, float med);
 int main(){
     int i, n;
     float *vetor, *p_vetor; //declara o vetor (como ponteiro)
-    float med, var;         //delcara as variaveis
+    float med, var;         //declara as variaveis
     n = le_quant_int(); // leitura do tamanho do vetor
     if (p_vetor = aloca(n, vetor)){
         preenche_vetor(n, p_vetor);
