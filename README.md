@@ -17,7 +17,7 @@
 
 ## Descrição do projeto
 
-Aulas de Estruturas de Dados do Professor Ed é um projeto do [professor Edkallenn](https://edkallenn.github.io/) com o objetivo de tornar público todos os programas utilizados nas aulas da disciplina Estruturas de Dados do curso de Sistemas de Informação da [Uninorte](https://www.uninorteac.edu.br/).
+Aulas de Estruturas de Dados do Professor Ed é um projeto do [professor Edkallenn](https://edkallenn.github.io/) com o objetivo de tornar público todos os programas utilizados nas aulas da disciplina Estruturas de Dados do curso de Sistemas de Informação da [Uninorte](https://www.uninorteac.edu.br/)  e do curso de Ciência da Computação da [Unipê - Centro Universitário de João Pessoa](https://www.unipe.edu.br/). 
 
 Os Commits são todos efetuados dentro de sala enquanto os programas vão sendo codificados junto com os alunos.
 
@@ -29,7 +29,7 @@ A ementa da disciplina contempla uma parte introdutória que cobre a Linguagem C
 
 ## Python?
 
-A partir de 2017/2018 a disciplina vem usando Python para exemplificar os algoritmos e a codificação tem sido uma mescla das duas liguagens com resultados excelentes (a aprovação aumentou muito assim como as desistências diminuíram!).
+A partir de 2017/2018 a disciplina vem usando Python para exemplificar os algoritmos e a codificação tem sido uma mescla das duas linguagens com resultados excelentes (a aprovação aumentou muito assim como as desistências diminuíram!).
 
 Adições serão sempre efetuadas além de Commits relacionados às maratonas de programação que, porventura, surgirem.
 
