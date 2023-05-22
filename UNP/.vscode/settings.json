@@ -1,0 +1,12 @@
+{
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "stdio.h": "c"
+    },
+    "discord.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none"
+}
