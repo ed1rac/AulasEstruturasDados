@@ -34,5 +34,3 @@ free(p);
 ```
 
 É importante lembrar que todas essas funções lidam com alocar, realocar e liberar memória em tempo de execução, o que significa que a memória alocada será liberada somente quando o programa terminar sua execução ou quando a função free() for explicitamente chamada.
-
-Espero que isso ajude a entender como alocar, realocar e liberar memória em C usando as funções malloc, calloc, realloc e free!
