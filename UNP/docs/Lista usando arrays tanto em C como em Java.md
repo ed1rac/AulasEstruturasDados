@@ -1,6 +1,6 @@
 # Lista usando arrays tanto em C como em Java
 
-Em C e Java, é possível implementar uma lista usando vetores (arrays). Aqui estão exemplos de implementações simples em cada linguagem:
+Em C e Java, é possível implementar uma lista usando vetores (arrays).Exemplos de implementações simples em cada linguagem:
 
 Implementação de lista usando vetor em C:
 
