@@ -44,19 +44,20 @@ class Stack:
             pointer = pointer.proximo
         return r
 
-pilha = Stack()
-pilha.push(1)
-pilha.push(2)
-pilha.push(3)
-pilha.push(4)
-print(pilha) # 4 3 2 1
-print(pilha.peek()) # 4
-print(pilha.pop()) # 4
-print(pilha) # 3 2 1
-print(pilha.pop()) # 3
-print(pilha) # 2 1
-print(pilha.pop()) # 2
-print(pilha) # 1
-print(pilha.pop()) # 1
-print(pilha) # None
-print(pilha.pop()) # None
+if __name__ == '__main__':
+    pilha = Stack()
+    pilha.push(1)
+    pilha.push(2)
+    pilha.push(3)
+    pilha.push(4)
+    print(pilha) # 4 3 2 1
+    print(pilha.peek()) # 4
+    print(pilha.pop()) # 4
+    print(pilha) # 3 2 1
+    print(pilha.pop()) # 3
+    print(pilha) # 2 1
+    print(pilha.pop()) # 2
+    print(pilha) # 1
+    print(pilha.pop()) # 1
+    print(pilha) # None
+    print(pilha.pop()) # None
