@@ -1,14 +1,14 @@
 class No:
-    def __init__(self, carga=None, proximo=None):
-        self.carga = carga
+    def __init__(self, valor=None, proximo=None):
+        self.valor = valor
         self.proximo = proximo
 
     def __str__(self):
-        return str(self.carga)
+        return str(self.valor)
 
     def imprime_lista(self, no):
         while no:
-            print(no.carga)
+            print(no.valor)
             self.imprime_lista(no.proximo)
             print('')
 
