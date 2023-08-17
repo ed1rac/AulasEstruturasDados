@@ -4,6 +4,7 @@
 typedef struct node
 {
     int info;
+    float qualquercoisa;
     struct node *esquerda;
     struct node *direita;
 } node;
