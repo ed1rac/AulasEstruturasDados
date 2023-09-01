@@ -14,9 +14,7 @@
 - Exemplos de uso de classes em estruturas de dados
 5. ArrayLists
 - Revisão dos ArrayLists em Java e suas características (tamanho dinâmico, elementos do mesmo tipo)
-- Exemplos de uso de ArrayLists
-
-em estruturas de dados
+- Exemplos de uso de ArrayLists em estruturas de dados
 
 6. Exemplos práticos
 - Criação de uma estrutura de dados simples usando estruturas de controle, arrays e classes
@@ -25,4 +23,4 @@ em estruturas de dados
 - Recapitulação dos conceitos apresentados
 - Importância de dominar as estruturas de controle, arrays e classes para criação e manipulação de estruturas de dados eficientes em Java
 
-Espero que este roteiro ajude na elaboração de
+
