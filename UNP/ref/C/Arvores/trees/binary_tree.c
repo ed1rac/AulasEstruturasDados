@@ -42,9 +42,9 @@ void insertArvore(Arvore **t, int num)
     }
     else
     {
-        if (num < (*t)->num)
-            insertArvore(&(*t)->direita, num);
         if (num > (*t)->num)
+            insertArvore(&(*t)->direita, num);
+        if (num < (*t)->num)
             insertArvore(&(*t)->esquerda, num);
     }
 }
@@ -118,6 +118,63 @@ void em_ordem(Arvore *tree)
     em_ordem(tree->direita);
 }
 
+typedef struct Stack
+{
+    int top;
+    int capacity;
+    Arvore **array;
+} Stack;
+
+Stack *createStack(int capacity)
+{
+    Stack *stack = (Stack *)malloc(sizeof(Stack));
+    if (stack == NULL)
+    {
+        fprintf(stderr, "Erro: falha na alocação de memória para Stack.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    stack->capacity = capacity;
+    stack->top = -1;
+    stack->array = (Arvore **)malloc(stack->capacity * sizeof(Arvore *));
+    if (stack->array == NULL)
+    {
+        fprintf(stderr, "Erro: falha na alocação de memória para array da pilha.\n");
+        free(stack);
+        exit(EXIT_FAILURE);
+    }
+
+    return stack;
+}
+
+int isFull(Stack *stack)
+{
+    return stack->top == stack->capacity - 1;
+}
+
+int isEmpty(Stack *stack)
+{
+    return stack->top == -1;
+}
+
+void push(Stack *stack, Arvore *item)
+{
+    if (isFull(stack))
+    {
+        return;
+    }
+    stack->array[++stack->top] = item;
+}
+
+Arvore *pop(Stack *stack)
+{
+    if (isEmpty(stack))
+    {
+        return NULL;
+    }
+    return stack->array[stack->top--];
+}
+
 void em_nivel(Arvore *tree)
 {
     if (tree == NULL)
@@ -147,48 +204,37 @@ void em_nivel(Arvore *tree)
     free(stack);
 }
 
-typedef struct Stack
+void print_tree_helper(Arvore *root, int space)
 {
-    int top;
-    int capacity;
-    Arvore **array;
-} Stack;
-
-Stack *createStack(int capacity)
-{
-    Stack *stack = (Stack *)malloc(sizeof(Stack));
-    stack->capacity = capacity;
-    stack->top = -1;
-    stack->array = (Node **)malloc(stack->capacity * sizeof(Arvore *));
-    return stack;
-}
-
-int isFull(Stack *stack)
-{
-    return stack->top == stack->capacity - 1;
-}
-
-int isEmpty(Stack *stack)
-{
-    return stack->top == -1;
-}
-
-void push(Stack *stack, Node *item)
-{
-    if (isFull(stack))
+    if (root == NULL)
     {
         return;
     }
-    stack->array[++stack->top] = item;
+
+    int i;
+    // Incrementar a dist�ncia entre os n�veis
+    space += 4;
+
+    // Imprimir o n� da direita primeiro
+    print_tree_helper(root->direita, space);
+
+    // Imprimir espa�os antes do n� atual
+    printf("\n");
+    for (i = 4; i < space; i++)
+    {
+        printf(" ");
+    }
+
+    // Imprimir o valor do n� atual
+    printf(" %d\n", root->num);
+
+    // Imprimir o n� da esquerda
+    print_tree_helper(root->esquerda, space);
 }
 
-Arvore *pop(Stack *stack)
+void exibe_tree(Arvore *root)
 {
-    if (isEmpty(stack))
-    {
-        return NULL;
-    }
-    return stack->array[stack->top--];
+    print_tree_helper(root, 0);
 }
 
 int main()
@@ -202,13 +248,14 @@ int main()
     insertArvore(&t, 6);
     insertArvore(&t, 8);
     showArvore(t);
-    printf("\nExibindo a árvore em ordem\n==================\n");
+    exibe_tree(t);
+    printf("\nExibindo a Arvore em ordem\n==================\n");
     em_ordem(t);
-    printf("\nExibindo a árvore em Pos-ordem\n==================\n");
+    printf("\nExibindo a Arvore em Pos-ordem\n==================\n");
     pos_ordem(t);
-    printf("\nExibindo a árvore em Pre-ordem\n==================\n");
+    printf("\nExibindo a Arvore em Pre-ordem\n==================\n");
     pre_ordem(t);
-    printf("\nExibindo a árvore em Nivel\n==================\n");
+    printf("\nExibindo a Arvore em Nivel\n==================\n");
     em_nivel(t);
     printf("\n");
     if (isInArvore(t, 4))
