@@ -1,0 +1,37 @@
+package generics;
+
+public class ClasseGenerica<T> { //Primeiro essa sintaxe aqui: usamos < > para especificar o tipo de parâmetro
+    //Um objeto do tipo T é declarado
+    T objeto;
+
+    public ClasseGenerica(T objeto) {  //construtor
+        this.objeto = objeto;
+    }
+    public T getObjeto() {
+        return this.objeto;
+    }
+
+    public static void main(String[] args) {
+        //Instância de um tipo Inteiro
+        ClasseGenerica<Integer> objetoInteiro = new ClasseGenerica<Integer>(10);
+        System.out.println("Objeto Inteiro: " + objetoInteiro.getObjeto());
+
+        //Instância de um tipo String
+        ClasseGenerica<String> objetoString = new ClasseGenerica<String>("Estruturas de Dados");
+        System.out.println("Objeto String: " + objetoString.getObjeto());
+
+    }
+}
+/*
+    Parâmetros em Java Generics
+    ============================
+    As convenções de nomenclatura dos parâmetros de tipo são importantes para aprender
+    completamente os genéricos. Os parâmetros de tipo comuns são os seguintes:
+
+        T – Tipo
+        E – Elemento
+        K – Chave
+        N – Número
+        V – Valor
+
+*/

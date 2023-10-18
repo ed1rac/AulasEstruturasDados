@@ -29,7 +29,6 @@ public class Lista<T> {
     public void imprimir() {
         imprimirNo(primeiro);
     }
-
     private void imprimirNo(Celula<T> celula) {
         if (celula != null) {
             System.out.println(""+celula.info);

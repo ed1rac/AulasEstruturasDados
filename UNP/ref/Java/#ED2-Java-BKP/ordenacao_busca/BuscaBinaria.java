@@ -10,15 +10,15 @@ public class BuscaBinaria {
       int mid = left + (right - left) / 2;
 
       if (array[mid] == chave) {
-        return mid; // Elemento encontrado, retorna o Ã­ndice
+        return mid; // Elemento encontrado, retorna o índice
       } else if (array[mid] < chave) {
-        left = mid + 1; // O elemento estÃ¡ na metade direita do array
+        left = mid + 1; // O elemento está na metade direita do array
       } else {
-        right = mid - 1; // O elemento estÃ¡ na metade esquerda do array
+        right = mid - 1; // O elemento está na metade esquerda do array
       }
     }
 
-    return -1; // Elemento nÃ£o encontrado
+    return -1; // Elemento não encontrado
   }
 
   public static void main(String[] args) {
@@ -28,9 +28,9 @@ public class BuscaBinaria {
     int result = buscaBinaria(sortedArray, target);
 
     if (result != -1) {
-      System.out.println("Elemento encontrado no Ã­ndice: " + result);
+      System.out.println("Elemento encontrado no índice: " + result);
     } else {
-      System.out.println("Elemento nÃ£o encontrado.");
+      System.out.println("Elemento não encontrado.");
     }
   }
 }
