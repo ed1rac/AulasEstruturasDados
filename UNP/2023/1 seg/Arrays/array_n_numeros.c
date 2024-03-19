@@ -4,14 +4,14 @@ int main()
 {
     int i, tamanho;
 
-    printf("Digite um tamanho de array [m†x: 100]");
+    printf("Digite um tamanho de array [m√°x: 100]");
     scanf(" %d", &tamanho);
 
     int array[tamanho];
     for (i = 0; i < tamanho; i++)
     {
         array[i] = 2 * i + 1;
-        printf("Endereáo de array[%d] = %p\n", i, &array[i]);
+        printf("Endere√ßo de array[%d] = %p\n", i, &array[i]);
     }
     printf("\n============================\n");
     // exibindo
