@@ -118,90 +118,31 @@ void em_ordem(Arvore *tree)
     em_ordem(tree->direita);
 }
 
-typedef struct Stack
-{
-    int top;
-    int capacity;
-    Arvore **array;
-} Stack;
-
-Stack *createStack(int capacity)
-{
-    Stack *stack = (Stack *)malloc(sizeof(Stack));
-    if (stack == NULL)
-    {
-        fprintf(stderr, "Erro: falha na alocação de memória para Stack.\n");
-        exit(EXIT_FAILURE);
-    }
-
-    stack->capacity = capacity;
-    stack->top = -1;
-    stack->array = (Arvore **)malloc(stack->capacity * sizeof(Arvore *));
-    if (stack->array == NULL)
-    {
-        fprintf(stderr, "Erro: falha na alocação de memória para array da pilha.\n");
-        free(stack);
-        exit(EXIT_FAILURE);
-    }
-
-    return stack;
-}
-
-int isFull(Stack *stack)
-{
-    return stack->top == stack->capacity - 1;
-}
-
-int isEmpty(Stack *stack)
-{
-    return stack->top == -1;
-}
-
-void push(Stack *stack, Arvore *item)
-{
-    if (isFull(stack))
-    {
-        return;
-    }
-    stack->array[++stack->top] = item;
-}
-
-Arvore *pop(Stack *stack)
-{
-    if (isEmpty(stack))
-    {
-        return NULL;
-    }
-    return stack->array[stack->top--];
-}
-
-void em_nivel(Arvore *tree)
+void em_nivel(struct Arvore *tree)
 {
     if (tree == NULL)
     {
         return;
     }
-    Stack *stack = createStack(10); // Ajuste o tamanho da pilha conforme necessário.
-    push(stack, tree);
+    // Usamos uma fila simples para percorrer os nós em nível
+    struct Arvore *fila[100];
+    int cabeca = 0, cauda = 0;
+    fila[cauda++] = tree;
 
-    while (!isEmpty(stack))
+    while (cabeca < cauda)
     {
-        Arvore *current = pop(stack);
-        printf("%d ", current->num);
+        Arvore *no = fila[cabeca++];
+        printf("%d ", no->num);
 
-        if (current->esquerda != NULL)
+        if (no->esquerda != NULL)
         {
-            push(stack, current->esquerda);
+            fila[cauda++] = no->esquerda;
         }
-        if (current->direita != NULL)
+        if (no->direita != NULL)
         {
-            push(stack, current->direita);
+            fila[cauda++] = no->direita;
         }
     }
-
-    // Libere a memória alocada para a pilha.
-    free(stack->array);
-    free(stack);
 }
 
 void print_tree_helper(Arvore *root, int space)
@@ -212,13 +153,13 @@ void print_tree_helper(Arvore *root, int space)
     }
 
     int i;
-    // Incrementar a dist�ncia entre os n�veis
+    // Incrementar a distancia entre os niveis
     space += 4;
 
     // Imprimir o n� da direita primeiro
     print_tree_helper(root->direita, space);
 
-    // Imprimir espa�os antes do n� atual
+    // Imprimir espacos antes do n� atual
     printf("\n");
     for (i = 4; i < space; i++)
     {
@@ -251,10 +192,13 @@ int main()
     exibe_tree(t);
     printf("\nExibindo a Arvore em ordem\n==================\n");
     em_ordem(t);
+    printf("\n");
     printf("\nExibindo a Arvore em Pos-ordem\n==================\n");
     pos_ordem(t);
+    printf("\n");
     printf("\nExibindo a Arvore em Pre-ordem\n==================\n");
     pre_ordem(t);
+    printf("\n");
     printf("\nExibindo a Arvore em Nivel\n==================\n");
     em_nivel(t);
     printf("\n");

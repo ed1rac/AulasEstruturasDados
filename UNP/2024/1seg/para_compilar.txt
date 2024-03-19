@@ -1,0 +1,7 @@
+Para compilar, pelo Replit.com (ou no linux) os arquivos que contenham a biblioteca do CS50 pode se seguir os seguintes passos:
+- gcc -c cs50.c
+  este comando vai gerar o arquivo cs50.o
+  assim, basta incluir este arquivo gerado na compilação final. Assim:
+- gcc main.c cs50.o -o main.out
+  sendo que main.oue é o executável
+- OU BASTA CLICAR NO RUN > após compilar o arquivo cs5.c

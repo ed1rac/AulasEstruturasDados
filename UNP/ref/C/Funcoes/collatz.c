@@ -21,7 +21,7 @@ int collatz(int a)
 int main(void)
 {
     int a;
-    scanf("%d", &a);
+    scanf(" %d", &a);
     printf("\n%d\n", collatz(a));
     return 0;
 }
