@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MAX 100 // tamanho maximo do vetor
-/*  Função :Gera numeros aleatorios do tipo float
+#define MAX 100 // tamanho máximo do vetor
+/*  Função :Gera números aleatorios do tipo float
     Autor : Edkallenn  - Data : 06/04/2012
-    Observões: Usa a função rand() e srand para gerar numeros aleatários
+    Observões: Usa a função rand() e srand para gerar números aleatórios
 */
-void preenche_vetor_aleatorio(float[]); // prototipo das funcoes
+void preenche_vetor_aleatorio(float[]); // protótipo das funções
 void exibe_vetor_float(float *);
 int aleatorio(int n);
 
 main()
 {
     float x[MAX];      // vetor original
-    srand(time(NULL)); // inicializa gerador de nos. aleatorios
+    srand(time(NULL)); // inicializa gerador de nos. aleatórios
     preenche_vetor_aleatorio(x);
     exibe_vetor_float(x);
     getchar();

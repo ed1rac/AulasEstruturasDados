@@ -58,11 +58,15 @@ void merge(int *V, int inicio, int meio, int fim){
     int p1, p2, tamanho, i, j, k;
     int fim1 = 0, fim2 = 0;
     tamanho = fim-inicio+1;
-    p1 = inicio; p2 = meio+1;
+    p1 = inicio; 
+    p2 = meio+1;
+
     int tamanhoArray=(tamanho*4)+1;
     int temp[tamanhoArray];
+
     printf("Combina:   ");exibeSubVetor(V,p1, meio);    //3 espaçose m branco
     printf("           ");exibeSubVetor(V,p2, fim-1); //11 espaços em branco
+
     if(temp != NULL){
         for(i=0; i<tamanho; i++){
             if(!fim1 && !fim2){

@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Funçãoo : Inicializacao com inputs (vetores)
+/*  Função : Inicialização com inputs (vetores)
     Autor : Edkallenn  - Data : 06/04/2012
     Observações: procedimentos. O vetor é global
 */
-#define MAX 5  //tamanho maximo do vetor
+#define MAX 5  //tamanho máximo do vetor
 
-void preenche_vetor();   //prototipo das funcoes (procedimentos)
-void exibe_vetor();       //prototipo alternativo (demonstra uso ponteiros)
+void preenche_vetor();   //protótipo das funções (procedimentos)
+void exibe_vetor();       //protótipo alternativo (demonstra uso ponteiros)
 int x[MAX]; //vetor
 
 main(){    

@@ -51,7 +51,7 @@ public class ArvoreAVL {
         return no;
     }
 
-    // Implementação das funções de rotação aqui
+    // Funções de rotação aqui
     private int altura(No no) {
         if (no != null) {
             return no.altura;
@@ -138,23 +138,25 @@ public class ArvoreAVL {
         arvore.inserir(4);
         arvore.inserir(3);*/
         System.out.println("Binária: ");
-        binaria.inserir(1);
-        binaria.inserir(2);
-        binaria.inserir(4);
+        binaria.inserir(10);
+        binaria.inserir(5);
+        binaria.inserir(15);
         binaria.inserir(3);
-        binaria.inserir(6);
         binaria.inserir(8);
+        binaria.inserir(12);
+        binaria.inserir(18);
         binaria.imprimeArvore();
         System.out.println();
         System.out.println("AVL");
      /*   arvore.inserir(1);
         arvore.inserir(2);*/
-        arvore.inserir(1);
-        arvore.inserir(2);
-        arvore.inserir(4);
+        arvore.inserir(10);
+        arvore.inserir(5);
+        arvore.inserir(15);
         arvore.inserir(3);
-        arvore.inserir(6);
         arvore.inserir(8);
+        arvore.inserir(12);
+        arvore.inserir(18);
         arvore.printArvoreAVL();
     }
 }

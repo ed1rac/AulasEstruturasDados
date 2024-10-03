@@ -3,13 +3,25 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe arquivo de build ativo",
-            "command": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\gcc.exe",
+            "command": "clang",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "-ferror-limit=1",
+                "-gdwarf-4",
+                "-ggdb3",
+                "-O0",
+                "-std=c11",
+                "-Wall",
+                "-Werror",
+                "-Wextra",
+                "-Wno-gnu-folding-constant",
+                "-Wno-sign-compare",
+                "-Wno-unused-parameter",
+                "-Wshadow",
+                "${fileDirname}\\${fileBasenameNoExtension}.out"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -21,7 +33,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Tarefa gerada pelo Depurador."
+            "detail": "Tarefa gerada pelo Ed."
         }
     ],
     "version": "2.0.0"

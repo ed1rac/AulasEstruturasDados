@@ -6,11 +6,9 @@ import java.util.Queue;
 public class ArvoreBinaria {
     //Arvore Binária usando a classe Node como base
     Node raiz;
-
     public ArvoreBinaria() {
         raiz = null;
     }
-
     public void inserir(Object data) {
 
         raiz = inserir(raiz, data);
@@ -108,17 +106,12 @@ public class ArvoreBinaria {
 
     public void exibirEmNivel() {
         Node tree = raiz;
-        if (tree == null) {
-            return;
-        }
-
+        if (tree == null) {  return;    }
         Queue<Node> fila = new LinkedList<>();
         fila.add(tree);
-
         while (!fila.isEmpty()) {
             Node no = fila.poll();
             System.out.print(no.data + " ");
-
             if (no.esquerda != null) {
                 fila.add(no.esquerda);
             }
@@ -155,7 +148,6 @@ public class ArvoreBinaria {
     public void imprimeArvore(){
         imprimeArvore(this.raiz, 0);
     }
-
     public static void imprimeArvore(Node raiz, int level) {
         if (raiz == null) {
             return;

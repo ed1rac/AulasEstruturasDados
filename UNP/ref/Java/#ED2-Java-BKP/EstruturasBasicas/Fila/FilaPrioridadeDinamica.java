@@ -45,20 +45,22 @@ public class FilaPrioridadeDinamica {
     if (this.estaVazia()) {
       throw new Exception("A fila está vazia");
     }
+
     //descobre a menor prioridade
     int menorPrioridade =
-      ((ElementoFilaPrioridade) this.inicio.getElemento()).getPrioridade();
+            ((ElementoFilaPrioridade) this.inicio.getElemento()).getPrioridade();
     Celula aux = this.inicio;
     while (aux != null) {
       if (
-        ((ElementoFilaPrioridade) aux.getElemento()).getPrioridade() <
-        menorPrioridade
+              ((ElementoFilaPrioridade) aux.getElemento()).getPrioridade() <
+                      menorPrioridade
       ) {
         menorPrioridade =
-          ((ElementoFilaPrioridade) aux.getElemento()).getPrioridade();
+                ((ElementoFilaPrioridade) aux.getElemento()).getPrioridade();
       }
       aux = aux.getProximo();
     }
+
     //desenfileira o elemento com menor prioridade
     aux = this.inicio;
     Celula anterior = null;

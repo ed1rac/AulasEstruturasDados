@@ -6,15 +6,15 @@ class Palindromo
 {
     static boolean isPalRec(String str, int s, int e)
     {
-        // Se há só um caractere
+        // Se hÃ¡ sÃ³ um caractere
         if (s == e)
             return true;
 
-        // se o primeiro e o último caractere não correspondem
+        // se o primeiro e o Ãºltimo caractere nÃ£o correspondem
         if ((str.charAt(s)) != (str.charAt(e)))
             return false;
 
-        // Se houver mais de dois caracteres, verifica se a substring do meio também é palíndromo ou não.
+        // Se houver mais de dois caracteres, verifica se a substring do meio tambÃ©m Ã© palÃ­ndromo ou nÃ£o.
         if (s < e + 1)
             return isPalRec(str, s + 1, e - 1);
 
@@ -25,7 +25,7 @@ class Palindromo
     {
         int n = str.length();
 
-        // Uma string vazia é considerada palíndromo
+        // Uma string vazia Ã© considerada palÃ­ndromo
         if (n == 0)
             return true;
 
@@ -43,8 +43,8 @@ class Palindromo
 
 
         if (isPalindrome(str))
-            System.out.println(str + " é palíndromo");
+            System.out.println(str + " Ã© palÃ­ndromo");
         else
-            System.out.println(str + " não é palíndromo");
+            System.out.println(str + " nÃ£o Ã© palÃ­ndromo");
     }
 }

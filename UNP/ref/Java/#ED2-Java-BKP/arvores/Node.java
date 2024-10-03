@@ -16,10 +16,8 @@ public class Node {
   //comparador
     @Override
     public String toString() {
-
       return String.valueOf(data);
     }
-
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {

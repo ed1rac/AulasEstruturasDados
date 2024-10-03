@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  FunÁ„o : Segundo contato com arrays (vetores)
+/*  Fun√ß√£o : Segundo contato com arrays (vetores)
     Autor : Edkallenn
     Data : 06/04/2012
-    ObservaÁıes: arquivo-> declaracao_preenchimento.cpp
+    Observa√ß√µes: arquivo-> declaracao_preenchimento.cpp
 */
-#define MAX 100  //tamanho maximo do vetor
+#define MAX 100 // tamanho m√°ximo do vetor
 
-main(){
+main()
+{
     int x[MAX];
     int t;
 
     // Preenche o vetor
-    for (t=0;t<MAX;++t)
-        x[t]=t*2+1; //forma normal - impares
+    for (t = 0; t < MAX; ++t)
+        x[t] = t * 2 + 1; // forma normal - impares
 
-    //Exibe
-    for (t=0;t<MAX;t++)
+    // Exibe
+    for (t = 0; t < MAX; t++)
         printf("%-3d ", x[t]);
 
     getchar();

@@ -79,6 +79,7 @@ public class FilaDinamica {
     fila.enfileira(4);
     fila.enfileira("Paulo");
     fila.enfileira(3.141592);
+    fila.enfileira("Ana Maria");
     System.out.println("Exibindo Fila:");
     fila.imprime();
     System.out.println("Tamanho da fila: " + fila.tamanho());
@@ -90,5 +91,9 @@ public class FilaDinamica {
     System.out.println("Tamanho da fila: " + fila.tamanho());
     System.out.println("Elemento do inicio: " + fila.inicio());
     System.out.println("Elemento do final: " + fila.ultimo());
+
+    System.out.println("Desenfileirando: " + fila.desenfileira());
+    System.out.println("Exibindo Fila:");
+    fila.imprime();
   }
 }

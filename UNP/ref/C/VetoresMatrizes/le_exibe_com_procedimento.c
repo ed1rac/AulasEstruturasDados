@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*  Funçãoo : Inicializacao com inputs (vetores) -     Autor : Edkallenn  - Data : 06/04/2012
+/*  Função : Inicialização com inputs (vetores) -
+    Autor : Edkallenn  - Data : 06/04/2012
     Observações: Usa a passagem por referencia do primeiro elemento
-    do vetor como parametro. Demonstra como o relacionamento entre ponteiros e
+    do vetor como parâmetro. Demonstra como o relacionamento entre ponteiros e
     matrizes é estreito em C.
 */
-#define MAX 5               // tamanho maximo do vetor
-void preenche_vetor(int[]); // prototipo das funcoes (procedimentos)
+#define MAX 5               // tamanho máximo do vetor
+void preenche_vetor(int[]); // protótipo das funcoes (procedimentos)
 void exibe_vetor(int *);    // prototipo alternativo (demonstra uso ponteiros)
 int main()
 {

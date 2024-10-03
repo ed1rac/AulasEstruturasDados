@@ -1,7 +1,7 @@
-/* Função : Exemplo de Lista - programa pedidos simples
+/* Funï¿½ï¿½o : Exemplo de Lista - programa pedidos simples
 / Autor : Edkallenn
 / Data : 06/04/2012
-/ Observações:
+/ Observaï¿½ï¿½es:
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@ typedef struct lista
   struct lista *prox;
 } lista;
 
-lista * plista;
+lista *plista;
 
 int cliente;
 float valor;
@@ -35,18 +35,18 @@ char opcao_menu()
 void ler_pedido()
 {
   printf("\nNumero do cliente ..... ");
-  scanf("%d",&cliente);
+  scanf("%d", &cliente);
   printf("Valor do pedido ...... ");
-  scanf("%f",&valor);
+  scanf("%f", &valor);
 }
 
 void incluir_pedido()
 {
-  lista *p,*q,*r;
+  lista *p, *q, *r;
 
   ler_pedido();
 
-  p = (lista *)calloc(1,sizeof(lista));
+  p = (lista *)calloc(1, sizeof(lista));
 
   p->cli = cliente;
   p->val = valor;
@@ -74,7 +74,7 @@ void incluir_pedido()
 
 void excluir_pedido()
 {
-  lista *p,*q;
+  lista *p, *q;
 
   ler_pedido();
 
@@ -109,12 +109,12 @@ void listar_pedidos()
   printf("--------+-----------\n");
   while (p != NULL)
   {
-    printf("  %04d  | %10.2f\n",p->cli,p->val);
+    printf("  %04d  | %10.2f\n", p->cli, p->val);
     p = p->prox;
   }
 }
 
-int main(int args, char * arg[])
+int main(int args, char *arg[])
 {
   char op;
 
@@ -125,13 +125,18 @@ int main(int args, char * arg[])
     op = opcao_menu();
     switch (op)
     {
-      case 'I': incluir_pedido(); break;
-      case 'E': excluir_pedido(); break;
-      case 'L': listar_pedidos(); break;
+    case 'I':
+      incluir_pedido();
+      break;
+    case 'E':
+      excluir_pedido();
+      break;
+    case 'L':
+      listar_pedidos();
+      break;
     }
     printf("\n");
     system("pause");
-  }
-  while (op != 'F');
+  } while (op != 'F');
   return 0;
 }

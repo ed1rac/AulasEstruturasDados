@@ -1,7 +1,7 @@
 package generics;
 
-public class ClasseGenerica<T> { //Primeiro essa sintaxe aqui: usamos < > para especificar o tipo de par‚metro
-    //Um objeto do tipo T È declarado
+public class ClasseGenerica<T> { //Primeiro essa sintaxe aqui: usamos < > para especificar o tipo de par√¢metro
+    //Um objeto do tipo T √© declarado
     T objeto;
 
     public ClasseGenerica(T objeto) {  //construtor
@@ -12,26 +12,36 @@ public class ClasseGenerica<T> { //Primeiro essa sintaxe aqui: usamos < > para e
     }
 
     public static void main(String[] args) {
-        //Inst‚ncia de um tipo Inteiro
+
+        exibeSplashScreen();
+        //Inst√¢ncia de um tipo Inteiro
         ClasseGenerica<Integer> objetoInteiro = new ClasseGenerica<Integer>(10);
         System.out.println("Objeto Inteiro: " + objetoInteiro.getObjeto());
 
-        //Inst‚ncia de um tipo String
+        //Inst√¢ncia de um tipo String
         ClasseGenerica<String> objetoString = new ClasseGenerica<String>("Estruturas de Dados");
         System.out.println("Objeto String: " + objetoString.getObjeto());
 
     }
+
+    public static void exibeSplashScreen(){
+        System.out.println("  ____ _____ _   _ _____ ____  ___ ____ ____  ");
+        System.out.println(" / ___| ____| \\ | | ____|  _ \\|_ _/ ___/ ___| ");
+        System.out.println("| |  _|  _| |  \\| |  _| | |_) || | |   \\___ \\ ");
+        System.out.println("| |_| | |___| |\\  | |___|  _ < | | |___ ___) |");
+        System.out.println(" \\____|_____|_| \\_|_____|_| \\_\\___\\____|____/ ");
+    }
 }
 /*
-    Par‚metros em Java Generics
+    Par√¢metros em Java Generics
     ============================
-    As convenÁıes de nomenclatura dos par‚metros de tipo s„o importantes para aprender
-    completamente os genÈricos. Os par‚metros de tipo comuns s„o os seguintes:
+    As conven√ß√µes de nomenclatura dos par√¢metros de tipo s√£o importantes para aprender
+    completamente os gen√©ricos. Os par√¢metros de tipo comuns s√£o os seguintes:
 
-        T ñ Tipo
-        E ñ Elemento
-        K ñ Chave
-        N ñ N˙mero
-        V ñ Valor
+        T ‚Äì Tipo
+        E ‚Äì Elemento
+        K ‚Äì Chave
+        N ‚Äì N√∫mero
+        V ‚Äì Valor
 
 */
