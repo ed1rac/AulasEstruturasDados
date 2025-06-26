@@ -1,5 +1,7 @@
-### Aulas Estruturas de Dados do Prof. Edkallenn Lima 
+### Aulas Estruturas de Dados do Prof. Edkallenn Lima
 ---
+
+Uma versão em HTML deste documento está disponível em [index.html](index.html).
 
 [Descrição do projeto](#Descricao-do-projeto)
 

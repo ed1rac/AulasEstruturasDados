@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas Estruturas de Dados</title>
+<style>
+  body {font-family: Arial, sans-serif; margin:0; line-height:1.6; background:#f9f9f9; color:#333;}
+  header {background:#7159c1; color:#fff; padding:20px 10px;}
+  nav ul {list-style:none; display:flex; flex-wrap:wrap; margin:0; padding:0;}
+  nav li {margin-right:15px;}
+  nav a {color:#fff; text-decoration:none; transition:color .3s;}
+  nav a:hover {color:#ffeb3b;}
+  main {max-width:960px; margin:auto; padding:20px;}
+  section {margin-bottom:40px; opacity:0; transform:translateY(20px); transition:opacity .6s ease-out, transform .6s ease-out;}
+  section.visible {opacity:1; transform:none;}
+  @media (max-width:600px) {
+    nav ul {flex-direction:column;}
+    nav li {margin:5px 0;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Aulas Estruturas de Dados do Prof. Edkallenn Lima</h1>
+  <nav>
+    <ul>
+      <li><a href="#descricao">Descrição do projeto</a></li>
+      <li><a href="#ementa">Ementa da Disciplina</a></li>
+      <li><a href="https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides">Slides</a></li>
+      <li><a href="Programas.md">Programas</a></li>
+      <li><a href="#python">Python?</a></li>
+      <li><a href="#contato">Contatos</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="descricao">
+    <h2>Descrição do projeto</h2>
+    <p>Aulas de Estruturas de Dados do Professor Ed é um projeto do <a href="https://edkallenn.github.io/">professor Edkallenn</a> com o objetivo de tornar público todos os programas utilizados nas aulas da disciplina Estruturas de Dados do curso de Sistemas de Informação da <a href="https://www.uninorteac.edu.br/">Uninorte</a>.</p>
+    <p>Os Commits são todos efetuados dentro de sala enquanto os programas vão sendo codificados junto com os alunos.</p>
+    <p><img src="https://img.shields.io/badge/Prof-Ed-%237159c1?style=for-the-badge&logo=ghost" alt="Badge"></p>
+  </section>
+  <section id="ementa">
+    <h2>Ementa da Disciplina</h2>
+    <p>A ementa da disciplina contempla uma parte introdutória que cobre a Linguagem C (<strong>Entrada/Saída, Controle de Fluxo, ponteiros e funções</strong>) e, em seguida, usa esta linguagem para apresentar as estruturas de dados básicas: vetores, matrizes, strings, estruturas heterogêneas(structs), busca linear e binária, ordenação (Insertion Sort, Bubble Sort, Selection Sort, Merge Sort e Quick Sort), e estruturas dinâmicas: listas, filas e pilhas.</p>
+  </section>
+  <section id="python">
+    <h2>Python?</h2>
+    <p>A partir de 2017/2018 a disciplina vem usando Python para exemplificar os algoritmos e a codificação tem sido uma mescla das duas liguagens com resultados excelentes (a aprovação aumentou muito assim como as desistências diminuíram!).</p>
+    <p>Adições serão sempre efetuadas além de Commits relacionados às maratonas de programação que, porventura, surgirem.</p>
+    <p><del>Serão, futuramente, disponibilizadas</del> (Já estão no ar) <a href="https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides">todas as apresentações</a> da disciplina além de uma ideia de projeto para deixar disponíveis programas em C ou Java relacionados à Estruturas de Dados que estão na plataforma URI On-line Judge.</p>
+  </section>
+  <section id="contato">
+    <h2>Contatos do professor</h2>
+    <ul>
+      <li>Página pessoal: <a href="https://edkallenn.github.io/">https://edkallenn.github.io/</a></li>
+      <li>e-mail: <a href="mailto:edkallenn@yahoo.com.br">edkallenn@yahoo.com.br</a></li>
+      <li>Twitter: <a href="https://twitter.com/edkallenn">@edkallenn</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/edkallenn">https://www.facebook.com/edkallenn</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/edkallenn/">@edkallenn</a></li>
+      <li>Blog: <a href="https://professored.wordpress.com/">https://professored.wordpress.com/</a></li>
+      <li>Linkedin: <a href="https://www.linkedin.com/in/edkallenn/">https://www.linkedin.com/in/edkallenn/</a></li>
+    </ul>
+    <p>Até mais e bons programas!</p>
+  </section>
+</main>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.1});
+
+  document.querySelectorAll('section').forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
