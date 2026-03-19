@@ -1,48 +1,54 @@
-### Aulas Estruturas de Dados do Prof. Edkallenn Lima 
+# 📚 Aulas de Estruturas de Dados
+
+<div align="center">
+  <img src="https://media.giphy.com/media/qgQUggZd3pbYQCyhgP/giphy.gif" width="150" alt="Coding GIF">
+  <br>
+  <strong>Repositório oficial dos códigos desenvolvidos em sala nas aulas do Prof. Edkallenn Lima</strong>
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <a href="https://ed1rac.github.io/AulasEstruturasDados/"><img src="https://img.shields.io/badge/Site_do_Projeto-121011?style=for-the-badge&logo=github&logoColor=white" alt="Site Oficial"></a>
+</div>
+
 ---
 
-[Descrição do projeto](#Descricao-do-projeto)
+## 🌟 Sobre o Projeto
 
-[Ementa da Disciplina](#Ementa-da-Disciplina)
+O projeto **"Aulas de Estruturas de Dados do Professor Ed"** foi criado com o objetivo de compartilhar publicamente todos os programas desenvolvidos nas aulas da disciplina de Estruturas de Dados dos cursos de Ciência da Computação e Sistemas de Informação da [Uninorte](https://www.uninorteac.edu.br/).
 
-[Slides usados em sala](https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides)
+> 💡 **Diferencial:** Os *commits* deste repositório são realizados em tempo real, **dentro da sala de aula**, à medida que o professor e os alunos programam juntos!
 
-[Página com os programas](/Programas.md)
+🌐 **Você pode visualizar a página oficial do projeto aqui:** [AulasEstruturasDados Page](https://ed1rac.github.io/AulasEstruturasDados/)
 
-[Python?](#Python)
+### 📖 Ementa da Disciplina
 
-[Contatos do professor:](#Contatos-do-professor)
+Nossa ementa contempla:
+1. **Introdução com Linguagem C:** Entrada/Saída, Controle de Fluxo, Ponteiros e Funções.
+2. **Estruturas de Dados Básicas:** Vetores, Matrizes, Strings, Estruturas heterogêneas (Structs).
+3. **Algoritmos Iniciais:** Busca Linear e Binária, Ordenação (*Insertion, Bubble, Selection, Merge* e *Quick Sort*).
+4. **Estruturas Dinâmicas:** Listas, Filas e Pilhas.
+
+### 🐍 Integrando Python
+A partir de 2017/2018, a disciplina vem usando **Python** para exemplificar os algoritmos. A codificação passou a ser uma mescla estruturada entre as duas linguagens com excelentes resultados: a taxa de aprovação aumentou muito e as desistências caíram consideravelmente.
+
+### 📊 Slides e Materiais
+Todas as apresentações em [slide](https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides) utilizadas na disciplina já estão disponíveis no diretório `/slides`! Além disso, a ideia é continuar adicionando códigos de resolução de problemas do URI Online Judge para treinar a lógica ou em maratonas de programação.
 
 ---
 
-## Descrição do projeto
+## 👨‍💻 Contatos do Professor
 
-Aulas de Estruturas de Dados do Professor Ed é um projeto do [professor Edkallenn](https://edkallenn.github.io/) com o objetivo de tornar público todos os programas utilizados nas aulas da disciplina Estruturas de Dados do curso de Sistemas de Informação da [Uninorte](https://www.uninorteac.edu.br/).
+👋 Feito por **Prof. Edkallenn Lima**
+- ⭐️ Página Pessoal: [edkallenn.github.io](https://edkallenn.github.io/)
+- 📧 E-mail: [edkallenn@yahoo.com.br](mailto:edkallenn@yahoo.com.br)
+- 🐦 Twitter: [@edkallenn](https://twitter.com/edkallenn)
+- 📸 Instagram: [@edkallenn](https://www.instagram.com/edkallenn/)
+- 📝 Blog: [professored.wordpress.com](https://professored.wordpress.com/)
+- 🌐 [LinkedIn](https://www.linkedin.com/in/edkallenn/) | [GitHub](https://github.com/ed1rac)
 
-Os Commits são todos efetuados dentro de sala enquanto os programas vão sendo codificados junto com os alunos.
-
-![Badge](https://img.shields.io/badge/Prof-Ed-%237159c1?style=for-the-badge&logo=ghost)
-
-## Ementa da Disciplina
-
-A ementa da disciplina contempla uma parte introdutória que cobre a Linguagem C (**Entrada/Saída, Controle de Fluxo, ponteiros e funções**) e, em seguida, usa esta linguagem para apresentar as estruturas de dados básicas: vetores, matrizes, strings, estruturas heterogêneas(structs), busca linear e binária, ordenação (Insertion Sort, Bubble Sort, Selection Sort, Merge Sort e Quick Sort), e estruturas dinâmicas: listas, filas e pilhas. 
-
-## Python?
-
-A partir de 2017/2018 a disciplina vem usando Python para exemplificar os algoritmos e a codificação tem sido uma mescla das duas liguagens com resultados excelentes (a aprovação aumentou muito assim como as desistências diminuíram!).
-
-Adições serão sempre efetuadas além de Commits relacionados às maratonas de programação que, porventura, surgirem.
-
-~~Serão, futuramente, disponibilizadas~~ (Já estão no ar) [todas as apresentações](https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides) da disciplina além de uma ideia de projeto para deixar disponíveis programas em C ou Java relacionados à Estruturas de Dados que estão na plataforma URI On-line Judge.
-
-## Contatos do professor: 
-
-- Página pessoal: <https://edkallenn.github.io/>
-- e-mail: [edkallenn@yahoo.com.br](mailto:edkallenn@yahoo.com.br)
-- Twitter: [@edkallenn](https://twitter.com/edkallenn)
-- Facebook: <https://www.facebook.com/edkallenn>
-- Instagram: [@edkallenn](https://www.instagram.com/edkallenn/)
-- Blog: <https://professored.wordpress.com/>
-- Linkedin: <https://www.linkedin.com/in/edkallenn/>
-
-Até mais e bons programas!
+<div align="center">
+  <i>"Até mais e bons programas!"</i>
+</div>
