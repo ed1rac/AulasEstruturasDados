@@ -1,0 +1,119 @@
+name: Auto Release on Push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # necessário para criar tags e releases
+
+    steps:
+
+      - name: Checkout do código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # necessário para contar commits e gerar versão
+
+      - name: Gerar versão automática baseada em tags existentes
+        id: versioning
+        run: |
+          # Pega a última tag no formato vX.Y.Z
+          LAST_TAG=$(git tag --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1)
+
+          if [ -z "$LAST_TAG" ]; then
+            # Nenhuma tag ainda: começa do zero
+            NEW_TAG="v0.1.0"
+          else
+            # Incrementa o patch (v1.2.3 → v1.2.4)
+            MAJOR=$(echo "$LAST_TAG" | cut -d. -f1 | tr -d 'v')
+            MINOR=$(echo "$LAST_TAG" | cut -d. -f2)
+            PATCH=$(echo "$LAST_TAG" | cut -d. -f3)
+            NEW_TAG="v${MAJOR}.${MINOR}.$((PATCH + 1))"
+          fi
+
+          echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+          echo "last_tag=$LAST_TAG" >> $GITHUB_OUTPUT
+          echo "Nova tag: $NEW_TAG"
+
+      - name: Gerar changelog desde a última tag
+        id: changelog
+        run: |
+          LAST_TAG="${{ steps.versioning.outputs.last_tag }}"
+
+          if [ -z "$LAST_TAG" ]; then
+            # Primeiro release: pega todos os commits
+            LOG=$(git log --pretty=format:"- %s (%h)" | head -20)
+          else
+            LOG=$(git log "$LAST_TAG"..HEAD --pretty=format:"- %s (%h)")
+          fi
+
+          # Escapa quebras de linha para o GITHUB_OUTPUT
+          echo "log<<EOF" >> $GITHUB_OUTPUT
+          echo "$LOG"     >> $GITHUB_OUTPUT
+          echo "EOF"      >> $GITHUB_OUTPUT
+
+      - name: Criar ZIP dos fontes
+        run: |
+          TAG="${{ steps.versioning.outputs.new_tag }}"
+          REPO="${{ github.event.repository.name }}"
+          zip -r "${REPO}-${TAG}.zip" . \
+            --exclude "*.git*" \
+            --exclude "*.github*" \
+            --exclude "node_modules/*" \
+            --exclude "__pycache__/*" \
+            --exclude "*.pyc"
+
+      - name: Criar tag no repositório
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${{ steps.versioning.outputs.new_tag }}" "${{ github.sha }}"
+          git push origin "${{ steps.versioning.outputs.new_tag }}"
+
+      - name: Criar Release com o ZIP anexado
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const fs   = require('fs');
+            const path = require('path');
+
+            const tag    = "${{ steps.versioning.outputs.new_tag }}";
+            const repo   = context.repo.repo;
+            const owner  = context.repo.owner;
+            const sha    = "${{ github.sha }}";
+            const log    = `${{ steps.changelog.outputs.log }}`;
+
+            // 1. Cria o release
+            const release = await github.rest.repos.createRelease({
+              owner,
+              repo,
+              tag_name:         tag,
+              tag_commitish:    sha,
+              name:             `Release ${tag}`,
+              body:             `## O que mudou\n\n${log}`,
+              draft:            false,
+              prerelease:       false
+            });
+
+            // 2. Anexa o ZIP como asset
+            const zipName = `${repo}-${tag}.zip`;
+            const zipData = fs.readFileSync(zipName);
+
+            await github.rest.repos.uploadReleaseAsset({
+              owner,
+              repo,
+              release_id:   release.data.id,
+              name:         zipName,
+              data:         zipData,
+              headers: {
+                "content-type":   "application/zip",
+                "content-length": zipData.length
+              }
+            });
+
+            console.log(`Release ${tag} criado com sucesso.`);
