@@ -7,8 +7,8 @@ import java.util.LinkedList;
 
 class TreeNode {
   Object data;
-  TreeNode left;
-  TreeNode right;
+  arvores.TreeNode left;
+  arvores.TreeNode right;
 
   public TreeNode(Object data) {
     this.data = data;
@@ -19,13 +19,13 @@ class TreeNode {
   public void insert(Object newData) {
     if (compare(newData, this.data) < 0) {
       if (left == null) {
-        left = new TreeNode(newData);
+        left = new arvores.TreeNode(newData);
       } else {
         left.insert(newData);
       }
     } else if (compare(newData, this.data) > 0) {
       if (right == null) {
-        right = new TreeNode(newData);
+        right = new arvores.TreeNode(newData);
       } else {
         right.insert(newData);
       }
@@ -44,7 +44,7 @@ class TreeNode {
     inOrder(this);
   }
 
-  private void inOrder(TreeNode node) {
+  private void inOrder(arvores.TreeNode node) {
     if (node != null) {
       inOrder(node.left);
       System.out.print(node.data + " ");
@@ -56,7 +56,7 @@ class TreeNode {
     preOrder(this);
   }
 
-  private void preOrder(TreeNode node) {
+  private void preOrder(arvores.TreeNode node) {
     if (node != null) {
       System.out.print(node.data + " ");
       preOrder(node.left);
@@ -68,7 +68,7 @@ class TreeNode {
     postOrder(this);
   }
 
-  private void postOrder(TreeNode node) {
+  private void postOrder(arvores.TreeNode node) {
     if (node != null) {
       postOrder(node.left);
       postOrder(node.right);
@@ -81,11 +81,11 @@ class TreeNode {
       return;
     }
 
-    Queue<TreeNode> queue = new LinkedList<>();
+    Queue<arvores.TreeNode> queue = new LinkedList<>();
     queue.offer(this);
 
     while (!queue.isEmpty()) {
-      TreeNode node = queue.poll();
+      arvores.TreeNode node = queue.poll();
       System.out.print(node.data + " ");
 
       if (node.left != null) {
@@ -102,9 +102,9 @@ class TreeNode {
 }
 
 public class VisualTreeDisplay extends JPanel {
-  private TreeNode root;
+  private arvores.TreeNode root;
 
-  public VisualTreeDisplay(TreeNode root) {
+  public VisualTreeDisplay(arvores.TreeNode root) {
     this.root = root;
   }
 
@@ -115,7 +115,7 @@ public class VisualTreeDisplay extends JPanel {
     drawTree(g, getWidth() / 2, 30, root, getWidth() / 8);
   }
 
-  private void drawTree(Graphics g, int x, int y, TreeNode treeNode, int xOffset) {
+  private void drawTree(Graphics g, int x, int y, arvores.TreeNode treeNode, int xOffset) {
     if (treeNode == null) {
       return;
     }
@@ -153,7 +153,7 @@ public class VisualTreeDisplay extends JPanel {
 
 
   public static void main(String[] args) {
-    TreeNode root = new TreeNode('D');
+    arvores.TreeNode root = new arvores.TreeNode('D');
     /*root.left = new TreeNode('B');
     root.right = new TreeNode('C');
     root.left.left = new TreeNode('D');
@@ -188,7 +188,7 @@ public class VisualTreeDisplay extends JPanel {
     JFrame frame = new JFrame("Visualiza��o da �rvore");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(800, 600);
-    frame.add(new VisualTreeDisplay(root));
+    frame.add(new arvores.VisualTreeDisplay(root));
     frame.setVisible(true);
   }
 }

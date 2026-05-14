@@ -11,7 +11,7 @@ class DesenhoArvoreAVL extends JPanel {
     }
 
     public void setArvore(ArvoreAVL arvore) {
-        this.arvore = arvore;  // Atualiza a árvore exibida
+        this.arvore = arvore;  // Atualiza a ï¿½rvore exibida
     }
 
     @Override

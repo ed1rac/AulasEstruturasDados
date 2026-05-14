@@ -1,6 +1,6 @@
 package EstruturasBasicas.EncadeadaPrimeiro;
 
-public class No {
+public class Nodo {
   String info;
-  No proximo;
+  Nodo proximo;
 }

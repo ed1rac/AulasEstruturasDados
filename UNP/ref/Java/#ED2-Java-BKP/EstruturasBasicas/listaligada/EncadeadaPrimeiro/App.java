@@ -1,6 +1,8 @@
-package EstruturasBasicas.EncadeadaPrimeiro;
+package EstruturasBasicas.listaligada.EncadeadaPrimeiro;
 
-public class Main {
+import EstruturasBasicas.EncadeadaPrimeiro.Lista;
+
+public class App {
 
   public static void main(String[] args) {
     Lista lista = new Lista();

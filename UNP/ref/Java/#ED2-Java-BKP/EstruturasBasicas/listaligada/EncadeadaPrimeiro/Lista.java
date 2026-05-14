@@ -1,34 +1,34 @@
 package EstruturasBasicas.EncadeadaPrimeiro;
 
 public class Lista {
-  No primeiro;
-  No ultimo;
+  Nodo primeiro;
+  Nodo ultimo;
   int tamanho;
 
   public Lista() {
     this.tamanho = 0;
   }
 
-  // Método para adicionar um elemento na lista
+  // Mï¿½todo para adicionar um elemento na lista
   public void adicionar(String info) {
-    No novoNo = new No();
-    novoNo.info = info;
-    novoNo.proximo = null;
+    Nodo novoNodo = new Nodo();
+    novoNodo.info = info;
+    novoNodo.proximo = null;
 
     if (primeiro == null) {
-      primeiro = novoNo;
-      ultimo = novoNo;
+      primeiro = novoNodo;
+      ultimo = novoNodo;
     } else {
-      ultimo.proximo = novoNo;
-      ultimo = novoNo;
+      ultimo.proximo = novoNodo;
+      ultimo = novoNodo;
     }
 
     tamanho++;
   }
 
-  // Método para imprimir a lista
+  // Mï¿½todo para imprimir a lista
   public void imprimir() {
-    No atual = primeiro;
+    Nodo atual = primeiro;
 
     while (atual != null) {
       System.out.println(atual.info);

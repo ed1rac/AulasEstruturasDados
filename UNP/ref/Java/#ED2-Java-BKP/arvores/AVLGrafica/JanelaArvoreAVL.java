@@ -6,14 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class JanelaArvoreAVL extends JFrame {
-    private ArvoreAVL arvoreAVL;
-    private DesenhoArvoreAVL painelDesenho;
+    private arvores.AVLGrafica.ArvoreAVL arvoreAVL;
+    private arvores.AVLGrafica.DesenhoArvoreAVL painelDesenho;
 
     public JanelaArvoreAVL() {
-        arvoreAVL = new ArvoreAVL();
-        painelDesenho = new DesenhoArvoreAVL(arvoreAVL);
+        arvoreAVL = new arvores.AVLGrafica.ArvoreAVL();
+        painelDesenho = new arvores.AVLGrafica.DesenhoArvoreAVL(arvoreAVL);
 
-        setTitle("Árvore AVL Visual");
+        setTitle("ï¿½rvore AVL Visual");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
         setLocationRelativeTo(null);
@@ -21,9 +21,9 @@ public class JanelaArvoreAVL extends JFrame {
         JPanel painelControle = new JPanel();
         JTextField campoInserir = new JTextField(10);
         JButton botaoInserir = new JButton("Inserir");
-        JButton botaoZerar = new JButton("Zerar Árvore");  // Botão para zerar a árvore
+        JButton botaoZerar = new JButton("Zerar ï¿½rvore");  // Botï¿½o para zerar a ï¿½rvore
 
-        // Ação do botão Inserir
+        // Aï¿½ï¿½o do botï¿½o Inserir
         botaoInserir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -32,25 +32,25 @@ public class JanelaArvoreAVL extends JFrame {
                     arvoreAVL.inserir(chave);
                     painelDesenho.repaint();
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Por favor, insira um número válido!");
+                    JOptionPane.showMessageDialog(null, "Por favor, insira um nï¿½mero vï¿½lido!");
                 }
             }
         });
 
-        // Ação do botão Zerar
+        // Aï¿½ï¿½o do botï¿½o Zerar
         botaoZerar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                arvoreAVL = new ArvoreAVL();  // Reinicializa a árvore AVL
-                painelDesenho.setArvore(arvoreAVL);  // Atualiza o painel com a nova árvore
-                painelDesenho.repaint();  // Re-renderiza a árvore (que agora está vazia)
+                arvoreAVL = new arvores.AVLGrafica.ArvoreAVL();  // Reinicializa a ï¿½rvore AVL
+                painelDesenho.setArvore(arvoreAVL);  // Atualiza o painel com a nova ï¿½rvore
+                painelDesenho.repaint();  // Re-renderiza a ï¿½rvore (que agora estï¿½ vazia)
             }
         });
 
-        painelControle.add(new JLabel("Inserir Nó:"));
+        painelControle.add(new JLabel("Inserir Nï¿½:"));
         painelControle.add(campoInserir);
         painelControle.add(botaoInserir);
-        painelControle.add(botaoZerar);  // Adiciona o botão Zerar ao painel de controle
+        painelControle.add(botaoZerar);  // Adiciona o botï¿½o Zerar ao painel de controle
 
         getContentPane().add(painelControle, BorderLayout.NORTH);
         getContentPane().add(painelDesenho, BorderLayout.CENTER);
@@ -58,7 +58,7 @@ public class JanelaArvoreAVL extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JanelaArvoreAVL janela = new JanelaArvoreAVL();
+            arvores.AVLGrafica.JanelaArvoreAVL janela = new arvores.AVLGrafica.JanelaArvoreAVL();
             janela.setVisible(true);
         });
     }

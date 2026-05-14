@@ -3,15 +3,15 @@ package arvores.AVL;
 import arvores.ArvoreBinaria;
 
 public class ArvoreAVL {
-    private No raiz;
+    private arvores.AVL.No raiz;
 
     public void inserir(int chave) {
         raiz = inserirNo(raiz, chave);
     }
 
-    private No inserirNo(No no, int chave) {
+    private arvores.AVL.No inserirNo(arvores.AVL.No no, int chave) {
         if (no == null) {
-            return new No(chave);
+            return new arvores.AVL.No(chave);
         }
 
         if (chave < no.chave) {
@@ -19,7 +19,7 @@ public class ArvoreAVL {
         } else if (chave > no.chave) {
             no.filhoDireita = inserirNo(no.filhoDireita, chave);
         } else {
-            // Duplicatas não são permitidas (você pode personalizar isso conforme necessário)
+            // Duplicatas nï¿½o sï¿½o permitidas (vocï¿½ pode personalizar isso conforme necessï¿½rio)
             return no;
         }
 
@@ -51,8 +51,8 @@ public class ArvoreAVL {
         return no;
     }
 
-    // Funções de rotação aqui
-    private int altura(No no) {
+    // Funï¿½ï¿½es de rotaï¿½ï¿½o aqui
+    private int altura(arvores.AVL.No no) {
         if (no != null) {
             return no.altura;
         } else {
@@ -60,7 +60,7 @@ public class ArvoreAVL {
         }
     }
 
-    private int calcularFatorBalanceamento(No no) {
+    private int calcularFatorBalanceamento(arvores.AVL.No no) {
         if (no != null) {
             return altura(no.filhoEsquerda) - altura(no.filhoDireita);
         } else {
@@ -68,15 +68,15 @@ public class ArvoreAVL {
         }
     }
 
-    private void atualizarAltura(No no) {
+    private void atualizarAltura(arvores.AVL.No no) {
         if (no != null) {
             no.altura = 1 + Math.max(altura(no.filhoEsquerda), altura(no.filhoDireita));
         }
     }
 
-    private No rotacaoEsquerda(No pai) {
-        No filho = pai.filhoDireita;
-        No T2 = filho.filhoEsquerda;
+    private arvores.AVL.No rotacaoEsquerda(arvores.AVL.No pai) {
+        arvores.AVL.No filho = pai.filhoDireita;
+        arvores.AVL.No T2 = filho.filhoEsquerda;
 
         filho.filhoEsquerda = pai;
         pai.filhoDireita = T2;
@@ -87,9 +87,9 @@ public class ArvoreAVL {
         return filho;
     }
 
-    private No rotacaoDireita(No pai) {
-        No filho = pai.filhoEsquerda;
-        No T2 = filho.filhoDireita;
+    private arvores.AVL.No rotacaoDireita(arvores.AVL.No pai) {
+        arvores.AVL.No filho = pai.filhoEsquerda;
+        arvores.AVL.No T2 = filho.filhoDireita;
 
         filho.filhoDireita = pai;
         pai.filhoEsquerda = T2;
@@ -100,12 +100,12 @@ public class ArvoreAVL {
         return filho;
     }
 
-    private No rotacaoEsquerdaDireita(No z) {
+    private arvores.AVL.No rotacaoEsquerdaDireita(arvores.AVL.No z) {
         z.filhoEsquerda = rotacaoEsquerda(z.filhoEsquerda);
         return rotacaoDireita(z);
     }
 
-    private No rotacaoDireitaEsquerda(No z) {
+    private arvores.AVL.No rotacaoDireitaEsquerda(arvores.AVL.No z) {
         z.filhoDireita = rotacaoDireita(z.filhoDireita);
         return rotacaoEsquerda(z);
     }
@@ -114,7 +114,7 @@ public class ArvoreAVL {
         printArvoreAVL(raiz, 0);
     }
 
-    private void printArvoreAVL(No no, int level) {
+    private void printArvoreAVL(arvores.AVL.No no, int level) {
         if (no == null) {
             return;
         }
@@ -137,7 +137,7 @@ public class ArvoreAVL {
         arvore.inserir(5);
         arvore.inserir(4);
         arvore.inserir(3);*/
-        System.out.println("Binária: ");
+        System.out.println("Binï¿½ria: ");
         binaria.inserir(10);
         binaria.inserir(5);
         binaria.inserir(15);

@@ -5,10 +5,10 @@ package arvores.vermelhoPreta;
  *
  * @author Ignas Lelys
  * @created May 6, 2011
- * @implNote Esta implementação é baseada no livro Cormen. Criada por Ignas Lelys.
- *           Alterada por Ed em 11/10/2023. Foram mantidos os nomes de métodos originais
- *           Foi alterado o método printNodeValue tanto na classe mãe quanto nesta classe
- *           para indicar a COR do nó. Isso facilita a visualização da árvore
+ * @implNote Esta implementaï¿½ï¿½o ï¿½ baseada no livro Cormen. Criada por Ignas Lelys.
+ *           Alterada por Ed em 11/10/2023. Foram mantidos os nomes de mï¿½todos originais
+ *           Foi alterado o mï¿½todo printNodeValue tanto na classe mï¿½e quanto nesta classe
+ *           para indicar a COR do nï¿½. Isso facilita a visualizaï¿½ï¿½o da ï¿½rvore
  */
 public class RedBlackTree extends AbstractSelfBalancingBinarySearchTree {
 

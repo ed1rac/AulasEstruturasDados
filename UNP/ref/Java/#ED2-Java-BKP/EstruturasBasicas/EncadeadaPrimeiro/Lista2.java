@@ -1,11 +1,11 @@
 package EstruturasBasicas.EncadeadaPrimeiro;
 
-public class Lista {
+public class Lista2 {
   Nodo primeiro;
   Nodo ultimo;
   int tamanho;
 
-  public Lista() {
+  public Lista2() {
     this.tamanho = 0;
   }
 
