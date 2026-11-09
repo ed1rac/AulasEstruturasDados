@@ -1,63 +1,69 @@
-# 📚 Aulas de Estruturas de Dados
+# 📚 Acervo Didático: Aulas e Exercícios de Estruturas de Dados
 
 <div align="center">
-  <img src="https://media.giphy.com/media/qgQUggZd3pbYQCyhgP/giphy.gif" width="150" alt="Coding GIF">
-  <br>
-  <strong>Repositório oficial dos códigos desenvolvidos em sala nas aulas do Prof. Edkallenn Lima</strong>
-</div>
 
-<div align="center">
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-  <a href="https://ed1rac.github.io/AulasEstruturasDados/"><img src="https://img.shields.io/badge/Site_do_Projeto-121011?style=for-the-badge&logo=github&logoColor=white" alt="Site Oficial"></a>
+[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+
+**Mais de 2.400 programas e exercícios cobrindo a evolução curricular da disciplina de Estruturas de Dados (2016 a 2019) ministrada pelo Prof. Edkallenn Lima.**
+
 </div>
 
 ---
 
-## 🌟 Sobre o Projeto
+## 🎯 Sobre o Acervo
 
-O projeto **"Aulas de Estruturas de Dados do Professor Ed"** foi criado com o objetivo de compartilhar publicamente todos os programas desenvolvidos nas aulas da disciplina de Estruturas de Dados dos cursos de Ciência da Computação e Sistemas de Informação da [Uninorte](https://www.uninorteac.edu.br/).
-
-> 💡 **Diferencial:** Os *commits* deste repositório são realizados em tempo real, **dentro da sala de aula**, à medida que o professor e os alunos programam juntos!
-
-🌐 **Você pode visualizar a página oficial do projeto aqui:** [AulasEstruturasDados Page](https://ed1rac.github.io/AulasEstruturasDados/)
-
-### 📖 Ementa da Disciplina
-
-Nossa ementa contempla:
-1. **Introdução com Linguagem C:** Entrada/Saída, Controle de Fluxo, Ponteiros e Funções.
-2. **Estruturas de Dados Básicas:** Vetores, Matrizes, Strings, Estruturas heterogêneas (Structs).
-3. **Algoritmos Iniciais:** Busca Linear e Binária, Ordenação (*Insertion, Bubble, Selection, Merge* e *Quick Sort*).
-4. **Estruturas Dinâmicas:** Listas, Filas e Pilhas.
-
-### 🐍 Integrando Python
-A partir de 2017/2018, a disciplina vem usando **Python** para exemplificar os algoritmos. A codificação passou a ser uma mescla estruturada entre as duas linguagens com excelentes resultados: a taxa de aprovação aumentou muito e as desistências caíram consideravelmente.
-
-### 📊 Slides e Materiais
-Todas as apresentações em [slide](https://github.com/ed1rac/AulasEstruturasDados/tree/master/slides) utilizadas na disciplina já estão disponíveis no diretório `/slides`! Além disso, a ideia é continuar adicionando códigos de resolução de problemas do URI Online Judge para treinar a lógica ou em maratonas de programação.
+Este repositório representa a memória pedagógica de anos de ensino superior de Ciência da Computação e Engenharia. Todos os exemplos foram desenvolvidos em sala de aula (*live-coding*) e em laboratórios práticos, enfatizando a compreensão interna do gerenciamento de memória, ponteiros e eficiência algorítmica.
 
 ---
 
-## 👨‍💻 Contatos do Professor
+## 📂 Mapa Temático das Estruturas de Dados
 
-👋 Feito por **Prof. Edkallenn Lima**
-- ⭐️ Página Pessoal: [edkallenn.github.io](https://edkallenn.github.io/)
-- 📧 E-mail: [edkallenn@yahoo.com.br](mailto:edkallenn@yahoo.com.br)
-- 🐦 Twitter: [@edkallenn](https://twitter.com/edkallenn)
-- 📸 Instagram: [@edkallenn](https://www.instagram.com/edkallenn/)
-- 📝 Blog: [professored.wordpress.com](https://professored.wordpress.com/)
-- 🌐 [LinkedIn](https://www.linkedin.com/in/edkallenn/) | [GitHub](https://github.com/ed1rac)
+Os programas estão organizados cronologicamente por semestre letivo e por temas essenciais:
 
-<div align="center">
-  <i>"Até mais e bons programas!"</i>
-</div>
+```text
+AulasEstruturasDados/
+├── 2016/       # Códigos e programas práticos desenvolvidos nas turmas de 2016
+├── 2017-1/     # Exercícios, provas e laboratórios do semestre 2017.1
+├── 2018/       # Exemplos de aula e projetos práticos de 2018
+└── 2019/       # Versões modernizadas em C, C++ e Python de 2019
+```
+
+### 📌 Principais Tópicos Abordados:
+- **Ponteiros & Gerenciamento de Memória**: Aritmética de ponteiros, alocação dinâmica (`malloc`, `calloc`, `realloc`, `free`) e prevenção de vazamentos de memória (*memory leaks*).
+- **Estruturas Lineares**:
+  - Listas Simplesmente Encadeadas, Duplamente Encadeadas e Circulares
+  - Pilhas (Stacks) com vetores estáticos e ponteiros dinâmicos (operações `push`, `pop`, `peek`)
+  - Filas (Queues) e Filas com Prioridade
+- **Estruturas Hierárquicas & Árvores**:
+  - Árvores Binárias de Busca (BST) — Inserção, busca, remoção e percursos (Pré-Ordem, Em-Ordem, Pós-Ordem)
+  - Árvores Balanceadas (Árvores AVL e rotações simples/duplas)
+- **Tabelas Hash (Espalhamento)**:
+  - Funções de hash, tratamento de colisões por encadeamento e endereçamento aberto
+- **Algoritmos de Ordenação**:
+  - Comparativos de complexidade temporal: Bubble Sort, Selection Sort, Insertion Sort, Shell Sort, Quick Sort e Merge Sort.
+
+---
+
+## 🛠️ Como Compilar os Exemplos em C/C++
+
+```bash
+# Compilar qualquer programa C com avisos ativados:
+gcc -Wall -Wextra programa.c -o programa
+./programa
+
+# Compilar com depuração e checagem de memória:
+gcc -g -Wall programa.c -o programa
+valgrind --leak-check=full ./programa
+```
 
 ---
 
 ## ☕ Apoie o Projeto (Me Pague um Café / Buy Me a Coffee)
 
-Este projeto é desenvolvido com dedicação e carinho. Se este projeto foi útil para os seus estudos, trabalho ou produtividade diária e você quiser apoiar o desenvolvimento contínuo:
+Este projeto é desenvolvido com dedicação e carinho à disseminação do conhecimento e da tecnologia. Se ele foi útil para os seus estudos, aulas, trabalho ou produtividade diária e você quiser apoiar o desenvolvimento contínuo:
 
 - ☕ **Buy Me a Coffee (Internacional / Cartão / QR Code)**:
   - 👉 **[https://buymeacoffee.com/edkallenn](https://buymeacoffee.com/edkallenn)**
