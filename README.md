@@ -1,14 +1,13 @@
 # 📚 Acervo Didático: Aulas e Exercícios de Estruturas de Dados
 
 <div align="center">
-
-[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
-
-**Mais de 2.400 programas e exercícios cobrindo a evolução curricular da disciplina de Estruturas de Dados (2016 a 2019) ministrada pelo Prof. Edkallenn Lima.**
-
+  <p>
+    <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"></a>
+    <a href="https://isocpp.org/"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+    <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"></a>
+  </p>
+  <p><strong>Mais de 2.400 programas e exercícios cobrindo a evolução curricular da disciplina de Estruturas de Dados (2016 a 2019) ministrada pelo Prof. Edkallenn Lima.</strong></p>
 </div>
 
 ---
