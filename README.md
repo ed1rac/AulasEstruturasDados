@@ -6,36 +6,54 @@
     <a href="https://isocpp.org/"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
     <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"></a>
   </p>
-  <p><strong>Mais de 2.400 programas e exercícios cobrindo a evolução curricular da disciplina de Estruturas de Dados (2016 a 2019) ministrada pelo Prof. Edkallenn Lima.</strong></p>
+  <p><strong>Amplo acervo didático de programas e exercícios práticos cobrindo a evolução curricular de Estruturas de Dados de 2016 até o presente — reunindo o acervo histórico inicial e as turmas a partir de 2019 na UnP (2023, 2024 e 2025.1), com biblioteca poliglota de referência em C, Java e Python — ministrada pelo Prof. Edkallenn Silva de Lima.</strong></p>
 </div>
 
 ---
 
 ## 🎯 Sobre o Acervo
 
-Este repositório representa a memória pedagógica de anos de ensino superior de Ciência da Computação e Engenharia. Todos os exemplos foram desenvolvidos em sala de aula (*live-coding*) e em laboratórios práticos, enfatizando a compreensão interna do gerenciamento de memória, ponteiros e eficiência algorítmica.
+Este repositório representa a memória pedagógica viva de anos de ensino superior de Ciência da Computação e Engenharia de Software. Todos os exemplos foram desenvolvidos em sala de aula (*live-coding*) e em laboratórios práticos, enfatizando a compreensão interna do gerenciamento de memória, ponteiros, complexidade assintótica e eficiência algorítmica.
+
+> 💡 **Nota Histórica e Transição Institucional**:  
+> Os diretórios **`2016/`**, **`2017-1/`**, **`2018/`** e **`2019/`** concentram a produção pedagógica das turmas iniciais na Paraíba (Unipê). A partir de **2019**, em razão da mudança de estado e de instituição de ensino superior para a **UnP (Universidade Potiguar)**, toda a evolução das novas turmas e materiais passou a ser organizada e centralizada dentro da pasta **`UNP/`**.  
+>  
+> Essa pasta reúne as turmas recentes (**`2023/`**, **`2024/`** e **`2025.1/`**) e possui a subpasta central **`UNP/ref/`**, que oferece um acervo poliglota completo de referência com programas implementados em **3 linguagens distintas: C, Java e Python**!
 
 ---
 
-## 📂 Mapa Temático das Estruturas de Dados
-
-Os programas estão organizados cronologicamente por semestre letivo e por temas essenciais:
+## 📂 Organização do Repositório & Mapa Cronológico
 
 ```text
 AulasEstruturasDados/
-├── 2016/       # Códigos e programas práticos desenvolvidos nas turmas de 2016
-├── 2017-1/     # Exercícios, provas e laboratórios do semestre 2017.1
-├── 2018/       # Exemplos de aula e projetos práticos de 2018
-└── 2019/       # Versões modernizadas em C, C++ e Python de 2019
+├── 2016/              # Turmas de 2016: Introdução a ponteiros, alocação e listas em C
+├── 2017-1/            # Semestre 2017.1: Laboratórios práticos, pilhas, filas e matrizes
+├── 2018/              # Turmas de 2018: Árvores binárias, algoritmos de ordenação e TADs em C/C++
+├── 2019/              # Turmas de 2019: Versões modernizadas e exercícios consolidados
+├── UNP/               # 🚀 Acervo UnP (A partir de 2019 — Nova instituição e estado):
+│   ├── 2023/          # Turmas 2023 (1 seg, 2 qui): Listas, Pilhas, Structs, Árvores
+│   ├── 2024/          # Turmas 2024 (1 seg, 2 qui, 3 sex): TADs, Filas, Pilhas, Alocação Dinâmica
+│   ├── 2025.1/        # Semestre 2025.1: TADs modernos, ordenação, matrizes e revisão geral
+│   └── ref/           # 🌐 Núcleo de Referência Poliglota (3 linguagens distintas):
+│       ├── C/         # Implementações completas em C (Ponteiros, Listas, Árvores, Grafos)
+│       ├── Java/      # Implementações completas em Java (Generics, OOP, Árvores AVL, Coleções)
+│       └── Python/    # Implementações completas em Python (Listas encadeadas, TADs, Busca e Ordenação)
+└── slides/            # Apresentações e notas de aula em PDF
 ```
 
-### 📌 Principais Tópicos Abordados:
+---
+
+## 📌 Principais Tópicos Abordados
+
 - **Ponteiros & Gerenciamento de Memória**: Aritmética de ponteiros, alocação dinâmica (`malloc`, `calloc`, `realloc`, `free`) e prevenção de vazamentos de memória (*memory leaks*).
 - **Estruturas Lineares**:
   - Listas Simplesmente Encadeadas, Duplamente Encadeadas e Circulares
   - Pilhas (Stacks) com vetores estáticos e ponteiros dinâmicos (operações `push`, `pop`, `peek`)
   - Filas (Queues) e Filas com Prioridade
+- **Tipos Abstratos de Dados (TADs)**:
+  - Encapsulamento, arquivos de cabeçalho (`.h`), implementação (`.c`) e programas de teste
 - **Estruturas Hierárquicas & Árvores**:
   - Árvores Binárias de Busca (BST) — Inserção, busca, remoção e percursos (Pré-Ordem, Em-Ordem, Pós-Ordem)
   - Árvores Balanceadas (Árvores AVL e rotações simples/duplas)
