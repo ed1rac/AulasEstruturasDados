@@ -18,7 +18,7 @@
 Este repositório representa a memória pedagógica viva de anos de ensino superior de Ciência da Computação e Engenharia de Software. Todos os exemplos foram desenvolvidos em sala de aula (*live-coding*) e em laboratórios práticos, enfatizando a compreensão interna do gerenciamento de memória, ponteiros, complexidade assintótica e eficiência algorítmica.
 
 > 💡 **Nota Histórica e Transição Institucional**:  
-> Os diretórios **`2016/`**, **`2017-1/`**, **`2018/`** e **`2019/`** concentram a produção pedagógica das turmas iniciais na Paraíba (Unipê). A partir de **2019**, em razão da mudança de estado e de instituição de ensino superior para a **UnP (Universidade Potiguar)**, toda a evolução das novas turmas e materiais passou a ser organizada e centralizada dentro da pasta **`UNP/`**.  
+> Os diretórios **`2016/`**, **`2017-1/`**, **`2018/`** e **`2019/`** concentram a produção pedagógica das turmas iniciais na Paraíba (Unipê). A partir de **2019**, em razão da mudança de estado e de instituição de ensino superior para a **pasta UNP**, toda a evolução das novas turmas e materiais passou a ser organizada e centralizada dentro da pasta **`UNP/`**.   O Prof. Edkallenn Silva de Lima atua no **Unipê - Centro Universitário de João Pessoa**.
 >  
 > Essa pasta reúne as turmas recentes (**`2023/`**, **`2024/`** e **`2025.1/`**) e possui a subpasta central **`UNP/ref/`**, que oferece um acervo poliglota completo de referência com programas implementados em **3 linguagens distintas: C, Java e Python**!
 
