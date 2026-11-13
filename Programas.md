@@ -5,7 +5,7 @@
 
 ---
 
-## 🏛️ Acervo Histórico (2016 a 2019 — Unipê)
+## 🏛️ Acervo Histórico (2016 a 2019)
 
 Códigos desenvolvidos em sala de aula nas turmas iniciais:
 
@@ -17,7 +17,7 @@ Códigos desenvolvidos em sala de aula nas turmas iniciais:
 
 ---
 
-## 🚀 Acervo UnP (A partir de 2019 — Nova Instituição e Estado)
+## 🚀 Códigos a partir de 2019 (Pasta UNP)
 
 A partir de 2019, em virtude da mudança de estado e de instituição de ensino superior para a **UnP (Universidade Potiguar)**, as aulas e turmas passaram a ser organizadas dentro da pasta **`UNP/`**:
 
