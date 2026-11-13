@@ -19,7 +19,7 @@ Códigos desenvolvidos em sala de aula nas turmas iniciais:
 
 ## 🚀 Códigos a partir de 2019 (Pasta UNP)
 
-A partir de 2019, em virtude da mudança de estado e de instituição de ensino superior para a **UnP (Universidade Potiguar)**, as aulas e turmas passaram a ser organizadas dentro da pasta **`UNP/`**:
+A partir de 2019, os códigos das aulas e turmas passaram a ser organizados dentro da pasta **`UNP/`** (ministradas pelo Prof. Edkallenn Silva de Lima — **Unipê - Centro Universitário de João Pessoa**):
 
 - 📁 **[Turmas de 2023 (1 seg, 2 qui)](https://github.com/ed1rac/AulasEstruturasDados/tree/master/UNP/2023)**:
   - Arrays, Básico, Listas Encadeadas, Pilhas, Structs, TADs e Árvores.
