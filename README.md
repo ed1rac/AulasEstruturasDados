@@ -8,7 +8,7 @@
     <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"></a>
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"></a>
   </p>
-  <p><strong>Amplo acervo didático de programas e exercícios práticos cobrindo a evolução curricular de Estruturas de Dados de 2016 até o presente — reunindo o acervo histórico inicial e as turmas a partir de 2019 na UnP (2023, 2024 e 2025.1), com biblioteca poliglota de referência em C, Java e Python — ministrada pelo Prof. Edkallenn Silva de Lima.</strong></p>
+  <p><strong>Amplo acervo didático de programas e exercícios práticos cobrindo a evolução curricular de Estruturas de Dados de 2016 até o presente — reunindo o acervo histórico inicial e as turmas a partir de 2019 na pasta UNP (2023, 2024 e 2025.1), com biblioteca poliglota de referência em C, Java e Python — ministrada pelo Prof. Edkallenn Silva de Lima (Unipê - Centro Universitário de João Pessoa).</strong></p>
 </div>
 
 ---
@@ -32,7 +32,7 @@ AulasEstruturasDados/
 ├── 2017-1/            # Semestre 2017.1: Laboratórios práticos, pilhas, filas e matrizes
 ├── 2018/              # Turmas de 2018: Árvores binárias, algoritmos de ordenação e TADs em C/C++
 ├── 2019/              # Turmas de 2019: Versões modernizadas e exercícios consolidados
-├── UNP/               # 🚀 Acervo UnP (A partir de 2019 — Nova instituição e estado):
+├── UNP/               # 🚀 Códigos a partir de 2019 (Turmas recentes e Acervo Poliglota):
 │   ├── 2023/          # Turmas 2023 (1 seg, 2 qui): Listas, Pilhas, Structs, Árvores
 │   ├── 2024/          # Turmas 2024 (1 seg, 2 qui, 3 sex): TADs, Filas, Pilhas, Alocação Dinâmica
 │   ├── 2025.1/        # Semestre 2025.1: TADs modernos, ordenação, matrizes e revisão geral
