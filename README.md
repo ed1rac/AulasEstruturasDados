@@ -8,7 +8,7 @@
     <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"></a>
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"></a>
   </p>
-  <p><strong>Amplo acervo didático de programas e exercícios práticos cobrindo a evolução curricular de Estruturas de Dados de 2016 até o presente — reunindo o acervo histórico inicial e as turmas a partir de 2019 na pasta UNP (2023, 2024 e 2025.1), com biblioteca poliglota de referência em C, Java e Python — ministrada pelo Prof. Edkallenn Silva de Lima (Unipê - Centro Universitário de João Pessoa).</strong></p>
+  <p><strong>Amplo acervo didático de programas e exercícios práticos cobrindo a evolução curricular de Estruturas de Dados de 2016 até o presente — reunindo o acervo histórico inicial na Uninorte (União Educacional do Norte)- Acre e as turmas a partir de 2019 na pasta UNP (2023, 2024 e 2025.1), com biblioteca poliglota de referência em C, Java e Python — ministrada pelo Prof. Edkallenn Silva de Lima (Unipê - Centro Universitário de João Pessoa).</strong></p>
 </div>
 
 ---
@@ -18,7 +18,7 @@
 Este repositório representa a memória pedagógica viva de anos de ensino superior de Ciência da Computação e Engenharia de Software. Todos os exemplos foram desenvolvidos em sala de aula (*live-coding*) e em laboratórios práticos, enfatizando a compreensão interna do gerenciamento de memória, ponteiros, complexidade assintótica e eficiência algorítmica.
 
 > 💡 **Nota Histórica e Transição Institucional**:  
-> Os diretórios **`2016/`**, **`2017-1/`**, **`2018/`** e **`2019/`** concentram a produção pedagógica das turmas iniciais na Paraíba (Unipê). A partir de **2019**, em razão da mudança de estado e de instituição de ensino superior para a **pasta UNP**, toda a evolução das novas turmas e materiais passou a ser organizada e centralizada dentro da pasta **`UNP/`**.   O Prof. Edkallenn Silva de Lima atua no **Unipê - Centro Universitário de João Pessoa**.
+> Os diretórios **`2016/`**, **`2017-1/`**, **`2018/`** e **`2019/`** concentram a produção pedagógica das turmas iniciais na Uninorte (União Educacional do Norte)- Acre. A partir de **2019**, em razão da mudança de estado e de instituição de ensino superior para a **pasta UNP**, toda a evolução das novas turmas e materiais passou a ser organizada e centralizada dentro da pasta **`UNP/`**.   O Prof. Edkallenn Silva de Lima hoje atua no **Unipê - Centro Universitário de João Pessoa**.
 >  
 > Essa pasta reúne as turmas recentes (**`2023/`**, **`2024/`** e **`2025.1/`**) e possui a subpasta central **`UNP/ref/`**, que oferece um acervo poliglota completo de referência com programas implementados em **3 linguagens distintas: C, Java e Python**!
 
